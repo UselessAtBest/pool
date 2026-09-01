@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>8-Ball League</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="/" data-link class="brand"><span class="brand-ball"></span><span id="league-name">8-Ball League</span></a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <button id="lang-toggle" class="lang-toggle" aria-label="Switch language" title="Switch language">EN</button>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme">☾</button>
+      <div id="nav-links" class="nav-links">
+        <a href="/" data-link data-i18n="nav.home">Home</a>
+        <a href="/fixtures" data-link data-i18n="nav.fixtures">Fixtures</a>
+        <a href="/teams" data-link data-i18n="nav.teams">Teams</a>
+        <a href="/rules" data-link data-i18n="nav.rules">Rules</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="app-main" class="app-shell"></main>
+
+  <footer class="site-footer">
+    <div class="app-shell">
+      <span id="footer-disclaimer"></span> <a href="/notice" data-link data-i18n="footer.notice_link">Read the notice</a>
+    </div>
+  </footer>
+
+  <script src="data/players.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/csv.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
