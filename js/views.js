@@ -66,26 +66,6 @@ function isTeamActiveThisSeason(team) {
   return inActiveList && !team.hiddenFromCurrentSeason;
 }
 
-/** The season whose roster/stats should be shown on a team's page: the
- *  current season if the team is active in it, otherwise the most recent
- *  season the team was actually active in (per activeSeasons, ordered by
- *  config.seasons). Falls back to the team's players' own seasons data if
- *  activeSeasons isn't set, then finally to the current season. */
-function teamDisplaySeason(team) {
-  const config = LEAGUE.config;
-  if (isTeamActiveThisSeason(team)) return config.currentSeason;
-
-  const candidateSeasons = Array.isArray(team.activeSeasons) && team.activeSeasons.length
-    ? team.activeSeasons
-    : Array.from(new Set(LEAGUE.players.flatMap(p => Object.entries(p.seasons).filter(([, tid]) => tid === team.id).map(([s]) => s))));
-
-  let mostRecent = null;
-  for (const s of config.seasons) { // config.seasons is chronological, oldest first
-    if (candidateSeasons.includes(s)) mostRecent = s;
-  }
-  return mostRecent || config.currentSeason;
-}
-
 function visibleTeamStandings() {
   return computeTeamStandings().filter(s => isTeamActiveThisSeason(s.team));
 }
@@ -403,8 +383,7 @@ function teamsListView() {
 function teamView(slug) {
   const team = teamBySlug(slug);
   if (!team) return notFoundView();
-  const season = teamDisplaySeason(team);
-  const isCurrent = season === LEAGUE.config.currentSeason;
+  const season = LEAGUE.config.currentSeason;
   const roster = LEAGUE.players.filter(p => p.seasons[season] === team.id);
   const playerStats = computePlayerStandings();
   const rosterWithStats = roster
@@ -440,7 +419,7 @@ function teamView(slug) {
         <h3>${t('team.captain')}</h3>
         <p>${team.captain ? playerLink(team.captain) : t('common.dash')}</p>
         <h3 style="margin-top:16px;">${t('team.season')}</h3>
-        <p>${escapeHtml(season)}${isCurrent ? '' : ` <span class="badge upcoming">${t('team.not_active')}</span>`}</p>
+        <p>${escapeHtml(season)}</p>
       </div>
     </div>
 
@@ -470,7 +449,7 @@ function teamView(slug) {
     </div>
 
     <div class="section">
-      <div class="section-head"><h2>${t('team.roster')}</h2>${isCurrent ? '' : `<span class="view-all">${t('team.roster_from', { season: escapeHtml(season) })}</span>`}</div>
+      <div class="section-head"><h2>${t('team.roster')}</h2></div>
       ${teamRosterTable(rosterWithStats)}
     </div>
   `;
@@ -578,25 +557,88 @@ function rankingClearancesView() {
 
 function rulesView() {
   return `
-    <div class="page-header"><div class="eyebrow">${t('rules.eyebrow')}</div><h1>${t('rules.title')}</h1></div>
+    <div class="page-header"><div class="eyebrow">The Rulebook</div><h1>Rules</h1></div>
     <div class="prose">
-      <p>${t('rules.placeholder')}</p>
-      <h2>${t('rules.match_format')}</h2>
+      <p>These are the current rules set for the ECON league, that can be found on their site <a href="https://fuengirolapoolleague.com/fuengirola-pool-league-rules.php">here.</a></p>
+      <h2><li><b> 1. </b> The Game </li></h2>
       <ul>
-        <li>${t('rules.rule1')}</li>
-        <li>${t('rules.rule2')}</li>
-        <li>${t('rules.rule3')}</li>
-      </ul>
-    </div>
+        The game shall be known as 8 Ball Pool and refered to in these rules as 'the game'. It is intended that players and teams should play 8 Ball Pool in the true spirit of the game and in a sportsmanlike manner. <b> It should be clearly understood that the referee is the sole judge of what is fair and unfair play. The referee will take whatever action is necessary to ensure that these rules are observed, the referees decision is FINAL. </b>
+     </ul>
+     <h2><li><b> 2. </b> Requirements Of The Game </li></h2>
+     <ul>
+        The game is played on a rectangle 6 pocket table with 15 balls, plus the cue ball. Ball comprise of two groups, represented by two different coloured balls, plus the 8 ball which is black. Alternatively, numerical balls may be used numbered 1-7 which are plain coloured balls (9-15) which are striped coloured balls.
+        Balls in the two groups are known as 'object balls'
+     </ul>
+     <h2><li><b> 3. </b> Object Of The Game. </li></h2>    
+    <ul>
+    The player or team pocketing their group of object balls first in any order and then legally pocketing the 8 ball (black), wins the game.
+    </ul>
+     <h2><li><b> 4. </b> Commencement of the Game </li></h2>
+     <ul>
+      <b> (A) </b> The balls are racked as illustrated[hyperlinkem] with the 8 ball (black) on the 8 ball spot, which is at the intersection of the center and corner pockets. <br>
+      <b> (B) </b> Order of play is determined by the flip of a coin. (Lag soon?) The winner of the (event) has the option of breaking or requesting their opponent to do so.
+      <b> (C) </b> The opening player plays at the triangle of object balls by striking the cue ball from any position on or behind the baulk line[hyperlink me]. That player must pot one or more object balls or cause at least two object balls to make contact with any cushion. Failure to do so is a foul break and will result in the balls being racked as shown [link] in these rules. The opposing player then starts the game with 2 visits. <br>
+      <b> (D) </b> If the 8 ball (black) is pocketed from the break shot, the balls will be re-racked as shown in these rules [link] and the game will be re-started by the <b> same player</b>. No penalty will be incurred. This applies even if other balls <b>including</b> the cue ball are pocketed or leave the playing surface 'off the table'. <br>
+      <b> (E) </b> On the first occasion a player legally pockets an object ball, including following a foul then that ball denotes their group, unless one or more of both groups are pocketed, in which case the player must then nominate a group before play continues. <br>
+      <b> (F) </b> If no object ball is pocketed from a legal break, then the players continue alternatively playing at either group until such a time a legal pot is made which decides the players group.<br>
+      <b> (G) </b> If a foul is commmitted: (other than as rule 4 (D)), and one or more object balls are pocketed before playing groups are decided, then the balls are ignored in determining the groups to be played. The oncoming player may play at any ball on the table, including the 8 ball (black) for the first shot, the first legal pot to determing the group as rule 4 (C).<br>
+      <b> (H) </b> If a ball or balls are legally pocketed: this entitles the player one additional shot and this continues until the player either:<br>
+          <b> (H1) </b> Fails to pocket one of their allocated balls<br>
+          <b> (H2) </b> Commits a foul.<br>
+      <b> (I) </b> Combination shots are allowed provided that the player hits one of their own group of balls first or any ball with the first shot following any foul. (see rule 6 (C))<br>
+    </ul>
+        <h2><li><b> 5. </b> Fouls </li></h2>
+    <ul>
+      <b> (A) </b> In off (cue ball pocketed)<br>
+      <b> (B) </b> Hitting opponents ball with the cue ball on the first impact except with the first shot following a foul.<br>
+      <b> (C) </b> Failing to hit any ball with the cue ball.<br>
+      <b> (D) </b> Jump shot: Defined as when the cue ball jumps over any part of any ball, before making contact with any ball.<br>
+      <b> (E) </b> Hitting the 8 ball (black) with the cue ball on the first impact of the cue ball before all of their own balls have been pocketed, except with the first shot following a foul.<br>
+      <b> (F) </b> Potting any opponents balls, except with the first shot following a foul.<br>
+      <b> (G) </b> Ball off the table:<br>
+        <i> (G1) </i> Any object ball or the 8 ball (black) shall be returned to the 8 ball sport (see rule 4(A)) or as near as possible to the that spot without touching any other ball, in a direct line between that spot and the center of the baulk line.<br>
+        <i> (G2) </i> If the cue ball, the ball to be played from hand (see rule 8(B)). A ball shall be deemed 'off the table' if it comes to rest other than on the bed of the table.<br>
+      <b> (H) </b> If a players clothing or body should touch any ball (except the cue ball after the referee calls foul, when the player is entitled to the cue ball in hand (see rule 6(B)))<br>
+      <b> (I) </b> Player not having at least one foot on the floor.<br>
+      <b> (J) </b> Playing or touching any other ball, than the cue ball, with the cue.<br>
+      <b> (K) </b> Striking the cue ball with any part of the cue other than the tip.<br>
+      <b> (L) </b> Playing out of turn.<br>
+      <b> (M) </b> Playing before the balls have come to rest.<br>
+      <b> (N) </b> Playing before the ball(s) that require re-spotting have been re-spotted.<br>
+      <b> (O) </b> Striking the cue ball with the cue more than once.<br>
+      <b> (P) </b> Push stroke: as defined as when<br>
+         <i> (P1) </i> The cue tip remains in contact with the cue ball when the cue ball makes contact with the object ball. (Touching ball scenario.)<br>
+         <i> (P2) </i> The tip remains <i>'obviously'</i> in contact with the cue ball once the cue has commenced its forward motion.<br>
+      <b> (Q) </b> Failing to nominate the group when balls of both groups have been pocketed with the first legal pot.<br>
+      <b> (R) </b> Foul break: Failing to pot an object ball or drive at least two object balls to any cushion(s).<br>
+    </ul>
+
+    <h2><li><b> 6. </b> Penalty Following Any Foul </li></h2>
+  <ul>
+      <b> (A) </b> Following any foul the offending player loses their next visit to the table.
+      <b> (B) </b> If the cue ball has come to rest on the playing surface, then the player having two visits may proceed to play the ball where the ball lies, or the cue ball may be played from any position on or behind the baulk line. Moving the cue ball in this manner does not count as a shot or visit <i> (Players are advised to ask the referee to hand them the cue ball.) </i>
+      <b> (C) </b> On the first shot only or the first visit the oncoming player may play the cue ball onto any ball without penalty. (Including any opponents ball or the 8 ball (black)) <br> When the player fails to pot a ball on the first or subsequent shot of the first visit, play continues with the second visit. The second visit is deemed to have started when the cue ball is struck on the first shot of the second visit.
+  </ul>
+      <h2><li><b> 7. </b> Loss of Game </li></h2>
+   
+   
+   
+   
+   
+   
+      </div>
+
+  
   `;
 }
 
 function noticeView() {
   return `
-    <div class="page-header"><div class="eyebrow">${t('notice.eyebrow')}</div><h1>${t('notice.title')}</h1></div>
+    <div class="page-header"><div class="eyebrow">Notice</div><h1>Site disclaimer</h1></div>
     <div class="prose">
-      <p>${escapeHtml(LEAGUE.config.disclaimer)} ${t('notice.independent_note')}</p>
-      <p>${t('notice.errors_note')}</p>
+      <p>${escapeHtml(LEAGUE.config.disclaimer)} This site is independent, and is not affiliated with, endorsed by, or operated on behalf of ECON.</p>
+      <p>Fixtures, results, and stats are provided for convenience and may contain errors. </p>
+      <p> DO NOT contact Jeanette, or anybody at ECON if you have issue with this site.</p>
     </div>
   `;
 }
