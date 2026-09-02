@@ -1,0 +1,37 @@
+# Goes at: _data/teams.yml
+# One entry per team. A team's roster isn't stored here - it's derived
+# automatically at build time from every player in players.yml whose
+# seasons map points at that team's id for the season being shown.
+#
+# id                        short, stable, lowercase id used in fixtures/
+#                           report CSVs and in players.yml seasons maps.
+# displayName               shown everywhere on the public site.
+# venue / address           the team's home venue.
+# captain                   a player id (links to their profile), or a
+#                           plain text name if they're not in players.yml.
+# venueOwner                same rule as captain: player id if they're a
+#                           league player, otherwise plain text.
+# info                      a short blurb shown on the team page.
+# image                     optional team photo, URL or relative path
+#                           (e.g. /assets/img/teams/your-team.jpg), or null.
+# activeSeasons             array of season strings this team is active in
+#                           (must match entries in config.yml's 'seasons'
+#                           list). A team not active in the current season
+#                           still gets a page, but shows its most recent
+#                           active season's roster instead, and drops out
+#                           of the Teams list and rankings for the current
+#                           season.
+# hiddenFromCurrentSeason   true/false - a quicker manual override to hide
+#                           a team from the current season regardless of
+#                           activeSeasons.
+
+- id: team-id
+  displayName: Team Name
+  venue: Venue Name
+  address: Street, Town
+  captain: player-id
+  venueOwner: player-id-or-plain-text-name
+  info: A short blurb about the team.
+  image: null
+  activeSeasons: ["2026-27"]
+  hiddenFromCurrentSeason: false

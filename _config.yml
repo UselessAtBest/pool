@@ -1,0 +1,28 @@
+# baseurl is intentionally left blank here - the GitHub Actions workflow
+# (.github/workflows/pages.yml) passes the correct one automatically at
+# build time via `jekyll build --baseurl "..."`, whether this repo is a
+# project site (served under /repo-name/) or a user/org root site or a
+# custom domain. You shouldn't need to touch this for GitHub Pages.
+#
+# Building locally with `bundle exec jekyll serve`, baseurl stays blank
+# (site served at the domain root), which is what you want for local dev.
+baseurl: ""
+url: ""
+
+title: "" # set from _data/config.yml at render time (see _layouts/default.html)
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - templates/
+  - node_modules
+  - vendor
+  - "*.gemspec"
+
+# _league_source holds the raw fixtures/report CSVs the plugin reads
+# directly - Jekyll ignores underscore-prefixed directories by default,
+# same as _data/_layouts/etc, so no explicit exclude is needed for it.

@@ -1,0 +1,23 @@
+# Goes at: _data/config.yml
+#
+# leagueName            shown in the nav bar and page title.
+# currentSeason         must match one of the entries in 'seasons' below -
+#                       this is the season shown by default everywhere
+#                       (home page, rankings, Teams list). Flip this at
+#                       the start of a new season.
+# seasons               every season the site knows about, oldest first -
+#                       used to work out a team's "most recent active
+#                       season" when it's not active in the current one.
+#                       Add the new season here too when you flip
+#                       currentSeason.
+# disclaimer            footer/notice-page text.
+# disclaimerLinkText    label for the footer's notice link.
+# disclaimerLinkUrl     where that link points - usually just /notice/.
+
+leagueName: "Your League Name"
+currentSeason: "2026-27"
+seasons:
+  - "2026-27"
+disclaimer: "This is not the official [league name] website."
+disclaimerLinkText: "Read the notice"
+disclaimerLinkUrl: "/notice/"

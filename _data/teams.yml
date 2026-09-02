@@ -1,0 +1,49 @@
+- id: black-cats
+  displayName: Black Cats
+  venue: The Cue Club
+  address: 12 Mill Lane, Riverside
+  captain: d-holt
+  venueOwner: Marcus Webb
+  info: Founded in 2011, the Cats play out of the back room at The Cue Club and have
+    won the league twice.
+  image: null
+  activeSeasons:
+  - 2025-26
+  - 2026-27
+  hiddenFromCurrentSeason: false
+- id: red-devils
+  displayName: Red Devils
+  venue: The Anchor Inn
+  address: 45 Harbour Road, Riverside
+  captain: l-simek
+  venueOwner: k-obrien
+  info: Perennial title contenders, known for a suffocating safety game.
+  image: null
+  activeSeasons:
+  - 2025-26
+  - 2026-27
+  hiddenFromCurrentSeason: false
+- id: cue-ballers
+  displayName: Cue Ballers
+  venue: Rack 'Em Bar
+  address: 8 Station Approach, Millbrook
+  captain: c-nakamura
+  venueOwner: Denny Cho
+  info: The youngest team in the league, promoted from Division Two in 2024.
+  image: null
+  activeSeasons:
+  - 2025-26
+  - 2026-27
+  hiddenFromCurrentSeason: false
+- id: rack-attack
+  displayName: Rack Attack
+  venue: The Fox & Cue
+  address: 3 Church Street, Millbrook
+  captain: w-brandt
+  venueOwner: Sheila Byrne
+  info: Social club side with the deepest bench in the league.
+  image: null
+  activeSeasons:
+  - 2025-26
+  - 2026-27
+  hiddenFromCurrentSeason: false

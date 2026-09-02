@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.data.config.leagueName }} &middot; {{ site.data.config.leagueName }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="{{ '/' | relative_url }}" class="brand"><span class="brand-ball"></span><span id="league-name">{{ site.data.config.leagueName }}</span></a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <button id="lang-toggle" class="lang-toggle" aria-label="Switch language" title="Switch language">EN</button>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme">&#9789;</button>
+      <div id="nav-links" class="nav-links">
+        <a href="{{ '/' | relative_url }}" data-i18n="nav.home"{% if page.url == '/' %} class="active"{% endif %}>Home</a>
+        <a href="{{ '/fixtures/' | relative_url }}" data-i18n="nav.fixtures"{% if page.url contains '/fixtures' %} class="active"{% endif %}>Fixtures</a>
+        <a href="{{ '/teams/' | relative_url }}" data-i18n="nav.teams"{% if page.url contains '/teams' %} class="active"{% endif %}>Teams</a>
+        <a href="{{ '/rules/' | relative_url }}" data-i18n="nav.rules"{% if page.url contains '/rules' %} class="active"{% endif %}>Rules</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="app-main" class="app-shell">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="app-shell">
+      <span id="footer-disclaimer">{{ site.data.config.disclaimer }}</span>
+      <a href="{{ site.data.config.disclaimerLinkUrl | relative_url }}" data-i18n="footer.notice_link">{{ site.data.config.disclaimerLinkText }}</a>
+    </div>
+  </footer>
+
+  <script src="{{ '/assets/js/i18n.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/app.js' | relative_url }}"></script>
+</body>
+</html>

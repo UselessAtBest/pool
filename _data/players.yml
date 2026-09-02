@@ -1,0 +1,192 @@
+- id: j-mercer
+  displayName: Jamie Mercer
+  seasons:
+    2026-27: black-cats
+    2025-26: black-cats
+  bio: Steady safety player, rarely misses a lay-up.
+  contact: null
+  photo: null
+- id: t-oyelaran
+  displayName: Tunde Oyelaran
+  seasons:
+    2026-27: black-cats
+    2025-26: red-devils
+  bio: Joined the Cats this season after three years with the Devils.
+  contact: null
+  photo: null
+- id: s-vance
+  displayName: Sam Vance
+  seasons:
+    2026-27: black-cats
+    2025-26: black-cats
+  bio: Doubles specialist, plays every week with Priya.
+  contact: null
+  photo: null
+- id: p-nandakumar
+  displayName: Priya Nandakumar
+  seasons:
+    2026-27: black-cats
+    2025-26: black-cats
+  bio: null
+  contact: null
+  photo: null
+- id: d-holt
+  displayName: Danny Holt
+  seasons:
+    2026-27: black-cats
+    2025-26: black-cats
+  bio: Team captain since 2024.
+  contact: null
+  photo: null
+- id: r-ferreira
+  displayName: Rosa Ferreira
+  seasons:
+    2026-27: red-devils
+    2025-26: red-devils
+  bio: League record holder for most clearances in a season (2023-24).
+  contact: null
+  photo: null
+- id: k-obrien
+  displayName: Kev O'Brien
+  seasons:
+    2026-27: red-devils
+    2025-26: red-devils
+  bio: null
+  contact: null
+  photo: null
+- id: m-devlin
+  displayName: Maeve Devlin
+  seasons:
+    2026-27: red-devils
+    2025-26: cue-ballers
+  bio: null
+  contact: null
+  photo: null
+- id: l-simek
+  displayName: Luka Simek
+  seasons:
+    2026-27: red-devils
+    2025-26: red-devils
+  bio: Captain of the Devils.
+  contact: null
+  photo: null
+- id: a-whitfield
+  displayName: Ana Whitfield
+  seasons:
+    2026-27: red-devils
+    2025-26: red-devils
+  bio: null
+  contact: null
+  photo: null
+- id: c-nakamura
+  displayName: Chie Nakamura
+  seasons:
+    2026-27: cue-ballers
+    2025-26: cue-ballers
+  bio: Captain of the Cue Ballers.
+  contact: null
+  photo: null
+- id: b-adeyemi
+  displayName: Bola Adeyemi
+  seasons:
+    2026-27: cue-ballers
+    2025-26: cue-ballers
+  bio: null
+  contact: null
+  photo: null
+- id: f-lindqvist
+  displayName: Freya Lindqvist
+  seasons:
+    2026-27: cue-ballers
+    2025-26: rack-attack
+  bio: null
+  contact: null
+  photo: null
+- id: o-mensah
+  displayName: Owusu Mensah
+  seasons:
+    2026-27: cue-ballers
+    2025-26: cue-ballers
+  bio: null
+  contact: null
+  photo: null
+- id: g-castellano
+  displayName: Gio Castellano
+  seasons:
+    2026-27: cue-ballers
+    2025-26: cue-ballers
+  bio: null
+  contact: null
+  photo: null
+- id: w-brandt
+  displayName: Wes Brandt
+  seasons:
+    2026-27: rack-attack
+    2025-26: rack-attack
+  bio: Captain of Rack Attack.
+  contact: null
+  photo: null
+- id: n-petrova
+  displayName: Nadia Petrova
+  seasons:
+    2026-27: rack-attack
+    2025-26: rack-attack
+  bio: null
+  contact: null
+  photo: null
+- id: e-ronan
+  displayName: Eoin Ronan
+  seasons:
+    2026-27: rack-attack
+    2025-26: rack-attack
+  bio: null
+  contact: null
+  photo: null
+- id: h-sagar
+  displayName: Hema Sagar
+  seasons:
+    2026-27: rack-attack
+    2025-26: cue-ballers
+  bio: null
+  contact: null
+  photo: null
+- id: z-kowalski
+  displayName: Zane Kowalski
+  seasons:
+    2026-27: rack-attack
+    2025-26: rack-attack
+  bio: null
+  contact: null
+  photo: null
+- id: q-fabbri
+  displayName: Quinn Fabbri
+  seasons:
+    2026-27: black-cats
+    2025-26: black-cats
+  bio: null
+  contact: null
+  photo: null
+- id: y-marsh
+  displayName: Yolanda Marsh
+  seasons:
+    2026-27: red-devils
+    2025-26: red-devils
+  bio: null
+  contact: null
+  photo: null
+- id: x-delacroix
+  displayName: Xavi Delacroix
+  seasons:
+    2026-27: cue-ballers
+    2025-26: cue-ballers
+  bio: null
+  contact: null
+  photo: null
+- id: v-okafor
+  displayName: Vera Okafor
+  seasons:
+    2026-27: rack-attack
+    2025-26: rack-attack
+  bio: null
+  contact: null
+  photo: null

@@ -1,0 +1,23 @@
+# Goes at: _data/players.yml
+# One entry per player.
+#
+# id            uniqueID used in match-report CSVs (Clearance column, and
+#               the SINGLES/DOUBLES player columns). Keep it short,
+#               lowercase, and stable once you start using it in reports.
+# displayName   shown everywhere on the public site.
+# seasons       map of season -> team id. The team listed under the
+#               current season (see currentSeason in config.yml) is shown
+#               as their current team; every other entry shows as a past
+#               team on their profile.
+# bio           optional short bio shown on their profile, or null.
+# contact       optional contact info shown on their profile, or null.
+# photo         optional image URL or relative path, or null - falls back
+#               to a colored initials badge when left null.
+
+- id: unique-id
+  displayName: Full Name
+  seasons:
+    "2026-27": team-id
+  bio: null
+  contact: null
+  photo: null
