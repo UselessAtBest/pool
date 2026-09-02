@@ -45,6 +45,18 @@ function initMobileNav() {
   });
 }
 
+/* ---- base path: the nav/footer links in index.html are written as plain
+ * route-relative paths ("/", "/fixtures", ...) since they're static markup
+ * with no templating - rewrite them once at boot to include BASE_PATH so
+ * hovering, right-click-open-in-new-tab, and first paint all point at the
+ * real URL (client-side navigation itself doesn't depend on this, but
+ * everything else does). */
+function applyBaseHrefs() {
+  document.querySelectorAll('nav a[data-link], footer a[data-link]').forEach(a => {
+    a.setAttribute('href', withBase(a.getAttribute('href')));
+  });
+}
+
 /* ---- language ---- */
 const AVAILABLE_LANGS = Object.keys(I18N); // ['en', 'es'] by default — add more in i18n.js
 
@@ -77,6 +89,7 @@ function initLangToggle() {
   initLang();
   initTheme();
   initMobileNav();
+  applyBaseHrefs();
   document.getElementById('league-name').textContent = 'Loading…';
   try {
     await loadLeagueData();
