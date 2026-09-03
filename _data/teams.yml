@@ -73,7 +73,7 @@
   - 2025-26
   - 2026-27
   hiddenFromCurrentSeason: false
-- id: royal-dix
+- id: royal_dix
   displayName: The Royal Dix
   venue: The Royal Oak
   address: ????
@@ -98,7 +98,7 @@
   - 2025-26
   - 2026-27
   hiddenFromCurrentSeason: false
-- id: pink-ladies
+- id: pink_ladies
   displayName: Churchills Pink Ladies
   venue: Churchills
   address: ????
@@ -126,7 +126,7 @@
   activeSeasons:
   - 2026-27
   hiddenFromCurrentSeason: false
-- id: wobbly-dix
+- id: wobbly_dix
   displayName: The Wobbly Dix
   venue: Wobbly Penguin
   address: ????
@@ -137,7 +137,7 @@
   activeSeasons:
   - 2026-27
   hiddenFromCurrentSeason: false
-- id: smokeys-m
+- id: smokeys_m
   displayName: Smokeys Men
   venue: Smokeys
   address: ????
@@ -151,7 +151,7 @@
   - 2025-26
   - 2026-27
   hiddenFromCurrentSeason: false
-- id: cpt-murph
+- id: cpt_murph
   displayName: Captain Murphys
   venue: Captain Murphys
   address: ????
@@ -179,7 +179,7 @@
   - 2025-26
   - 2026-27
   hiddenFromCurrentSeason: false
-- id: match-inn-maj
+- id: match_inn_maj
   displayName: Match-Inn Majestic
   venue: Match Inn Bar
   address: ????
@@ -205,7 +205,7 @@
   - 2023-24
   - 2024-25
   hiddenFromCurrentSeason: true
-- id: match-dix
+- id: match_dix
   displayName: Match Inn Dix
   venue: Match Inn Bar
   address: ????
@@ -217,7 +217,7 @@
   - 2024-25
   - 2025-26
   hiddenFromCurrentSeason: true
-- id: penguin-b
+- id: penguin_b
   displayName: Penguin B
   venue: Wobbly Penguin
   address: ????
@@ -243,7 +243,7 @@
   - 2022-23
   - 2023-24
   hiddenFromCurrentSeason: true
-- id: dixies-dogs
+- id: dixies_dogs
   displayName: Dixies Dogs
   venue: Dixies
   address: ????
@@ -255,7 +255,7 @@
   - 2024-25
   - 2025-26
   hiddenFromCurrentSeason: true
-- id: dixies-dodgers
+- id: dixies_dodgers
   displayName: Dixies Dodgers
   venue: Dixies
   address: ????
@@ -291,7 +291,7 @@
   activeSeasons:
   - 2024-25
   hiddenFromCurrentSeason: true
-- id: dixies-oldies
+- id: dixies_oldies
   displayName: Dixies Golden Oldies
   venue: Dixies
   address: ????
