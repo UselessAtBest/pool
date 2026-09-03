@@ -1,12 +1,18 @@
-# baseurl is intentionally left blank here - the GitHub Actions workflow
-# (.github/workflows/pages.yml) passes the correct one automatically at
-# build time via `jekyll build --baseurl "..."`, whether this repo is a
-# project site (served under /repo-name/) or a user/org root site or a
-# custom domain. You shouldn't need to touch this for GitHub Pages.
+# baseurl is the URL path prefix your site is served under. For a GitHub
+# Pages project site (username.github.io/repo-name/), set this to your
+# repo name with a leading slash, e.g. "/pool" - based on your URL
+# (github.io/pool), that's what's set below. If you ever rename the repo,
+# update this to match.
 #
-# Building locally with `bundle exec jekyll serve`, baseurl stays blank
-# (site served at the domain root), which is what you want for local dev.
-baseurl: ""
+# Leave it "" instead if you're using a custom domain, or if this repo is
+# a user/org root site (named exactly username.github.io).
+#
+# This used to be auto-detected by the GitHub Actions workflow instead of
+# being set here - that's been removed in favor of this explicit value,
+# since the auto-detection wasn't landing correctly and a wrong baseurl
+# breaks every internal link on the site (which is exactly what you were
+# seeing: nav links pointing at the domain root instead of /pool).
+baseurl: "/pool"
 url: ""
 
 title: "" # set from _data/config.yml at render time (see _layouts/default.html)

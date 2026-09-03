@@ -58,7 +58,10 @@ bundle install
 bundle exec jekyll serve
 ```
 
-then open `http://localhost:4000`. `bundle exec jekyll serve --livereload`
+then open `http://localhost:4000/pool/` (note the `/pool/` - `baseurl` in
+`_config.yml` applies locally too, so the site serves under that path even
+on your machine, matching how it's actually deployed).
+`bundle exec jekyll serve --livereload`
 will auto-rebuild and refresh your browser as you edit files.
 
 ## Updating the site each week
