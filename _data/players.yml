@@ -1,192 +1,1532 @@
-- id: j-mercer
-  displayName: Jamie Mercer
+- id: mike_kenny
+  displayName: Mike Kenny
   seasons:
-    2026-27: black-cats
-    2025-26: black-cats
-  bio: Steady safety player, rarely misses a lay-up.
-  contact: null
-  photo: null
-- id: t-oyelaran
-  displayName: Tunde Oyelaran
-  seasons:
-    2026-27: black-cats
-    2025-26: red-devils
-  bio: Joined the Cats this season after three years with the Devils.
-  contact: null
-  photo: null
-- id: s-vance
-  displayName: Sam Vance
-  seasons:
-    2026-27: black-cats
-    2025-26: black-cats
-  bio: Doubles specialist, plays every week with Priya.
-  contact: null
-  photo: null
-- id: p-nandakumar
-  displayName: Priya Nandakumar
-  seasons:
-    2026-27: black-cats
-    2025-26: black-cats
+    2026-27: ????
+    2025-26: match-inn-maj
   bio: null
   contact: null
   photo: null
-- id: d-holt
-  displayName: Danny Holt
+- id: kenny_hiron
+  displayName: Kenny Hiron
   seasons:
-    2026-27: black-cats
-    2025-26: black-cats
-  bio: Team captain since 2024.
-  contact: null
-  photo: null
-- id: r-ferreira
-  displayName: Rosa Ferreira
-  seasons:
-    2026-27: red-devils
-    2025-26: red-devils
-  bio: League record holder for most clearances in a season (2023-24).
-  contact: null
-  photo: null
-- id: k-obrien
-  displayName: Kev O'Brien
-  seasons:
-    2026-27: red-devils
-    2025-26: red-devils
+    2026-27: ????
+    2025-26: match-inn-maj
+    2024-25: majesty
   bio: null
   contact: null
   photo: null
-- id: m-devlin
-  displayName: Maeve Devlin
+- id: david_rico
+  displayName: David Rico
   seasons:
-    2026-27: red-devils
-    2025-26: cue-ballers
+    2026-27: ????
+    2025-26: match-inn-maj
   bio: null
   contact: null
   photo: null
-- id: l-simek
-  displayName: Luka Simek
+- id: jim_edmunds
+  displayName: Jim Edmunds
   seasons:
-    2026-27: red-devils
-    2025-26: red-devils
-  bio: Captain of the Devils.
-  contact: null
-  photo: null
-- id: a-whitfield
-  displayName: Ana Whitfield
-  seasons:
-    2026-27: red-devils
-    2025-26: red-devils
+    2026-27: ????
+    2025-26: match-inn-maj
   bio: null
   contact: null
   photo: null
-- id: c-nakamura
-  displayName: Chie Nakamura
+- id: graham_dodsworth
+  displayName: Graham Dodsworth
   seasons:
-    2026-27: cue-ballers
-    2025-26: cue-ballers
-  bio: Captain of the Cue Ballers.
-  contact: null
+    2026-27: ????
+    2025-26: match-inn-maj
+    2024-25: majesty
+  bio: Captain of League Winners 2025/2026 Match Inn Majesty.
+  contact: (+34 622 292 737)
   photo: null
-- id: b-adeyemi
-  displayName: Bola Adeyemi
+- id: colin_murdoch
+  displayName: Colin Murdoch
   seasons:
-    2026-27: cue-ballers
-    2025-26: cue-ballers
+    2026-27: ????
+    2025-26: match-inn-maj
   bio: null
   contact: null
   photo: null
-- id: f-lindqvist
-  displayName: Freya Lindqvist
+- id: steve_pote
+  displayName: Steve Pote
   seasons:
-    2026-27: cue-ballers
-    2025-26: rack-attack
+    2026-27: ????
+    2025-26: match-inn-maj
   bio: null
   contact: null
   photo: null
-- id: o-mensah
-  displayName: Owusu Mensah
+- id: steve_miles
+  displayName: Steve Miles
   seasons:
-    2026-27: cue-ballers
-    2025-26: cue-ballers
+    2026-27: ????
+    2025-26: match-inn-maj
   bio: null
   contact: null
   photo: null
-- id: g-castellano
-  displayName: Gio Castellano
+- id: geordie_agnew
+  displayName: Geordie Agnew
   seasons:
-    2026-27: cue-ballers
-    2025-26: cue-ballers
+    2026-27: ????
+    2025-26: match-inn-maj
   bio: null
   contact: null
   photo: null
-- id: w-brandt
-  displayName: Wes Brandt
+- id: mark_shaw
+  displayName: Mark Shaw
   seasons:
-    2026-27: rack-attack
-    2025-26: rack-attack
-  bio: Captain of Rack Attack.
-  contact: null
-  photo: null
-- id: n-petrova
-  displayName: Nadia Petrova
-  seasons:
-    2026-27: rack-attack
-    2025-26: rack-attack
+    2026-27: ????
+    2025-26: match-inn-maj
   bio: null
   contact: null
   photo: null
-- id: e-ronan
-  displayName: Eoin Ronan
+- id: rich_brown
+  displayName: Rich Brown
   seasons:
-    2026-27: rack-attack
-    2025-26: rack-attack
+    2026-27: ????
   bio: null
   contact: null
   photo: null
-- id: h-sagar
-  displayName: Hema Sagar
+- id: chris_pyott
+  displayName: Chris Pyott
   seasons:
-    2026-27: rack-attack
-    2025-26: cue-ballers
+    2026-27: outlaws
+    2025-26: outlaws
+  bio: Captain of League Winners 2024/2025 Eagles Outlaws.
+  contact: (+34 695 142 561)
+  photo: null
+- id: jesus_miguel_rodriguez
+  displayName: Jes&s Miguel Rodriguez
+  seasons:
+    2026-27: ????
+    2025-26: outlaws
   bio: null
   contact: null
   photo: null
-- id: z-kowalski
-  displayName: Zane Kowalski
+- id: jesus_blanco
+  displayName: Jes&s Blanco
   seasons:
-    2026-27: rack-attack
-    2025-26: rack-attack
+    2026-27: ????
+    2025-26: outlaws
   bio: null
   contact: null
   photo: null
-- id: q-fabbri
-  displayName: Quinn Fabbri
+- id: jose_serrato
+  displayName: Jos& Serrato
   seasons:
-    2026-27: black-cats
-    2025-26: black-cats
+    2026-27: ????
+    2025-26: outlaws
   bio: null
   contact: null
   photo: null
-- id: y-marsh
-  displayName: Yolanda Marsh
+- id: tony_sepi_dis
+  displayName: Tony (Sepi) Dis
   seasons:
-    2026-27: red-devils
-    2025-26: red-devils
+    2026-27: ????
+    2025-26: outlaws
   bio: null
   contact: null
   photo: null
-- id: x-delacroix
-  displayName: Xavi Delacroix
+- id: brandon_tamayo
+  displayName: Brandon Tamayo
   seasons:
-    2026-27: cue-ballers
-    2025-26: cue-ballers
+    2026-27: ????
+    2025-26: outlaws
   bio: null
   contact: null
   photo: null
-- id: v-okafor
-  displayName: Vera Okafor
+- id: mateo_alvarez
+  displayName: Mateo &lvarez
   seasons:
-    2026-27: rack-attack
-    2025-26: rack-attack
+    2026-27: ????
+    2025-26: outlaws
+  bio: null
+  contact: null
+  photo: null
+- id: adrian_romero
+  displayName: Adri&n Romero
+  seasons:
+    2026-27: ????
+    2025-26: outlaws
+  bio: null
+  contact: null
+  photo: null
+- id: german_ganfornina
+  displayName: Germ&n Ganfornina
+  seasons:
+    2026-27: ????
+    2025-26: outlaws
+  bio: null
+  contact: null
+  photo: null
+- id: pepo_molina
+  displayName: Pepo Molina (Jos&)
+  seasons:
+    2026-27: ????
+    2025-26: outlaws
+  bio: null
+  contact: null
+  photo: null
+- id: adrian_munoz
+  displayName: Adrian Mu&oz
+  seasons:
+    2026-27: ????
+    2025-26: outlaws
+  bio: null
+  contact: null
+  photo: null
+- id: barry_cooke
+  displayName: Barry Cooke
+  seasons:
+    2026-27: N/A
+    2025-26: penguin-b
+  bio: null
+  contact: null
+  photo: null
+- id: matt_pow
+  displayName: Matt_Pow
+  seasons:
+    2026-27: ????
+    2025-26: penguin-b
+  bio: null
+  contact: (+34 613 924 406)
+  photo: null
+- id: ben_fisher
+  displayName: Ben Fisher
+  seasons:
+    2026-27: N/A
+    2025-26: penguin-b
+  bio: null
+  contact: null
+  photo: null
+- id: alan_craine
+  displayName: Alan Craine
+  seasons:
+    2026-27: wobbly
+    2025-26: penguin-b
+  bio: null
+  contact: (+34 665 329 678)
+  photo: null
+- id: paul_stedman
+  displayName: Paul Stedman
+  seasons:
+    2026-27: wobbly
+    2025-26: penguin-b
+  bio: null
+  contact: null
+  photo: null
+- id: matt-christopher
+  displayName: Matt Christopher
+  seasons:
+    2026-27: ????
+    2025-26: penguin-b
+  bio: null
+  contact: null
+  photo: null
+- id: andy_fletcher
+  displayName: Andy Fletcher
+  seasons:
+    2026-27: ????
+    2025-26: penguin-b
+  bio: null
+  contact: null
+  photo: null
+- id: kevin_brabbs
+  displayName: Kevin Brabbs
+  seasons:
+    2026-27: ????
+    2025-26: penguin-b
+  bio: null
+  contact: null
+  photo: null
+- id: joseph_lalor
+  displayName: Jose Lalor
+  seasons:
+    2026-27: ????
+    2025-26: penguin-b
+  bio: null
+  contact: null
+  photo: null
+- id: lee_roberts
+  displayName: Lee Roberts
+  seasons:
+    2026-27: ????
+    2025-26: penguin-b
+  bio: null
+  contact: null
+  photo: null
+- id: martin_honey
+  displayName: Martin Honey
+  seasons:
+    2026-27: ????
+    2025-26: penguin-b
+  bio: null
+  contact: null
+  photo: null
+- id: chris_parker
+  displayName: Chris Parker
+  seasons:
+    2026-27: ????
+    2025-26: penguin-b
+  bio: null
+  contact: null
+  photo: null
+- id: simon_atchinson
+  displayName: Simon Atchinson
+  seasons:
+    2026-27: ????
+    2025-26: penguin-b
+  bio: null
+  contact: null
+  photo: null
+- id: stuart_weeks
+  displayName: Stuart Weeks
+  seasons:
+    2026-27: smokeys-m
+    2025-26: smokeys-m
+  bio: null
+  contact: null
+  photo: null
+- id: frank_paddy_mullan
+  displayName: Frank Paddy Mullan
+  seasons:
+    2026-27: smokeys-m
+    2025-26: smokeys-m
+  bio: null
+  contact: null
+  photo: null
+- id: damien_mcgeoghegan
+  displayName: Damien Mcgeoghegan
+  seasons:
+    2026-27: smokeys-m
+    2025-26: smokeys-m
+  bio: null
+  contact: null
+  photo: null
+- id: liam_hurney
+  displayName: Liam Hurney
+  seasons:
+    2026-27: smokeys-m
+    2025-26: smokeys-m
+  bio: null
+  contact: null
+  photo: null
+- id: tommy_mcgill
+  displayName: Tommy McGill
+  seasons:
+    2026-27: smokeys-m
+    2025-26: smokeys-m
+  bio: null
+  contact: null
+  photo: null
+- id: niall_heneghan
+  displayName: Niall Heneghan
+  seasons:
+    2026-27: N/A
+    2025-26: smokeys-m
+  bio: <3
+  contact: null
+  photo: null
+- id: kev_mulligan
+  displayName: Kevin Mulligan
+  seasons:
+    2026-27: smokeys-m
+    2025-26: smokeys-m
+  bio: null
+  contact: (+35 487 255 06 50)
+  photo: null
+- id: robbie_tester
+  displayName: Robbie Tester
+  seasons:
+    2026-27: smokeys-m
+    2025-26: smokeys-m
+  bio: null
+  contact: null
+  photo: null
+- id: david_doherty
+  displayName: David Doherty
+  seasons:
+    2026-27: smokeys-m
+    2025-26: smokeys-m
+  bio: null
+  contact: null
+  photo: null
+- id: steve_carr
+  displayName: Steve Carr
+  seasons:
+    2026-27: smokeys-m
+    2025-26: smokeys-m
+  bio: null
+  contact: null
+  photo: null
+- id: ken_parkinson
+  displayName: Ken Parkinson
+  seasons:
+    2026-27: smokeys-m
+    2025-26: smokeys-m
+  bio: null
+  contact: null
+  photo: null
+- id: seb_mellberg
+  displayName: Sebastian Mellberg
+  seasons:
+    2026-27: smokeys-m
+    2025-26: smokeys-m
+  bio: null
+  contact: null
+  photo: null
+- id: brendan_burke
+  displayName: Brendan Burke
+  seasons:
+    2026-27: smokeys-m
+    2025-26: smokeys-m
+  bio: null
+  contact: null
+  photo: null
+- id: james_maylon
+  displayName: James Maylon
+  seasons:
+    2026-27: smokeys-m
+    2025-26: smokeys-m
+  bio: null
+  contact: null
+  photo: null
+- id: paul_hansford
+  displayName: Paul Hansford
+  seasons:
+    2026-27: smokeys-m
+    2025-26: smokeys-m
+  bio: null
+  contact: null
+  photo: null
+- id: gabriel_herrera_fernandez
+  displayName: Gabriel Herrera Fern&ndez
+  seasons:
+    2026-27: ????
+    2025-26: smokeys-m
+  bio: null
+  contact: null
+  photo: null
+- id: hans_wijnands
+  displayName: Hans Wijnandsha
+  seasons:
+    2026-27: smokeys-m
+    2025-26: smokeys-m
+  bio: null
+  contact: (+34 698 543 479)
+  photo: null
+- id: gerardo_ariel
+  displayName: Gerardo (Pepo) Ariel
+  seasons:
+    2026-27: harriers
+    2025-26: harriers
+  bio: null
+  contact: (+34 663 137 898)
+  photo: null
+- id: jonathan_gomez
+  displayName: Jonathan Gomez
+  seasons:
+    2026-27: harriers
+    2025-26: harriers
+  bio: null
+  contact: null
+  photo: null
+- id: jose_maria_candil
+  displayName: Jose Maria Candil
+  seasons:
+    2026-27: harriers
+    2025-26: harriers
+  bio: null
+  contact: null
+  photo: null
+- id: alfredo_gutierrez_sr
+  displayName: Alfredo Gutierrez SR
+  seasons:
+    2026-27: harriers
+    2025-26: harriers
+  bio: null
+  contact: (+34 643 202 899)
+  photo: null
+- id: david_asghedom
+  displayName: David Asghedom
+  seasons:
+    2026-27: harriers
+    2025-26: harriers
+  bio: null
+  contact: null
+  photo: null
+- id: alejando_callo_nino
+  displayName: Alejandro Callo Ni&o
+  seasons:
+    2026-27: harriers
+    2025-26: harriers
+  bio: null
+  contact: null
+  photo: null
+- id: rayjho_hashmatrai_ojeda
+  displayName: Rayjho Hashmatrai Ojeda
+  seasons:
+    2026-27: harriers
+    2025-26: harriers
+  bio: null
+  contact: null
+  photo: null
+- id: alfredo_gutierrez_jr
+  displayName: Alfredo Gutierrez JR
+  seasons:
+    2026-27: harriers
+    2025-26: harriers
+  bio: null
+  contact: null
+  photo: null
+- id: sergio_koala_moreno_gonzalez
+  displayName: Sergio Koala Moreno Gonzalez
+  seasons:
+    2026-27: harriers
+    2025-26: harriers
+  bio: null
+  contact: null
+  photo: null
+- id: roman_figuerola
+  displayName: Roman _Figuerola
+  seasons:
+    2026-27: harriers
+    2025-26: harriers
+  bio: null
+  contact: null
+  photo: null
+- id: francisco_marin
+  displayName: Francisco (Paco) Marin
+  seasons:
+    2026-27: harriers
+    2025-26: harriers
+  bio: null
+  contact: null
+  photo: null
+- id: melke_olli
+  displayName: Melke Olli
+  seasons:
+    2026-27: harriers
+    2025-26: harriers
+  bio: null
+  contact: null
+  photo: null
+- id: piero_valasco
+  displayName: Piero Valasco
+  seasons:
+    2026-27: harriers
+    2025-26: harriers
+  bio: null
+  contact: null
+  photo: null
+- id: alvaro_ruiz
+  displayName: Alvaro Ruiz
+  seasons:
+    2026-27: harriers
+    2025-26: harriers
+  bio: null
+  contact: null
+  photo: null
+- id: carlos_barionuevo
+  displayName: Carlos Barionuevo
+  seasons:
+    2026-27: harriers
+    2025-26: harriers
+  bio: null
+  contact: null
+  photo: null
+- id: elias_bentonilla
+  displayName: Elias Bentonilla
+  seasons:
+    2026-27: ????
+    2025-26: harriers
+  bio: null
+  contact: null
+  photo: null
+- id: ger_philippens
+  displayName: Ger Philippens
+  seasons:
+    2026-27: ????
+    2025-26: harriers
+  bio: null
+  contact: null
+  photo: null
+- id: martin_daris
+  displayName: Martin Daris
+  seasons:
+    2026-27: ????
+    2025-26: harriers
+  bio: null
+  contact: null
+  photo: null
+- id: moha_puerta
+  displayName: Moha Puerta
+  seasons:
+    2026-27: ????
+    2025-26: harriers
+  bio: null
+  contact: null
+  photo: null
+- id: nic_light
+  displayName: Nic Light
+  seasons:
+    2026-27: royal-dix
+    2025-26: match-dix
+    2024-25: match-dix
+    2023-24: dixies
+  bio: null
+  contact: null
+  photo: null
+- id: bob_wheelan
+  displayName: Bob Wheelan
+  seasons:
+    2026-27: royal-dix
+    2025-26: match-dix
+    2024-25: penguin-b
+  bio: null
+  contact: null
+  photo: null
+- id: michel_catozzi
+  displayName: Michel Catozzi
+  seasons:
+    2026-27: royal-dix
+    2025-26: dixies-dogs
+    2024-25: dixies-dodgers
+  bio: null
+  contact: null
+  photo: null
+- id: goran_nielsen
+  displayName: G&ran Nielsen
+  seasons:
+    2026-27: royal-dix
+    2025-26: match-dix
+    2024-25: match-inn
+  bio: null
+  contact: null
+  photo: null
+- id: tom_hughs
+  displayName: Tom Hughs
+  seasons:
+    2026-27: royal-dix
+    2025-26: match-dix
+    2024-25: match-dix
+    2023-24: dixies
+  bio: Captain of Royal Dix
+  contact: (+34 613 630 739)
+  photo: null
+- id: alan_doig
+  displayName: Alan Doig
+  seasons:
+    2026-27: royal-dix
+    2025-26: match-dix
+    2024-25: dixies
+    2023-24: dixies
+  bio: null
+  contact: null
+  photo: null
+- id: ron_pointon
+  displayName: Ron Pointon
+  seasons:
+    2026-27: royal-dix
+    2025-26: match-dix
+  bio: null
+  contact: null
+  photo: null
+- id: dave-cross
+  displayName: Dave Cross
+  seasons:
+    2026-27: royal-dix
+    2025-26: match-dix
+    2024-25: match-dix
+    2023-24: dixies
+  bio: null
+  contact: null
+  photo: null
+- id: darren_baillie
+  displayName: Darren Baillie
+  seasons:
+    2026-27: royal-dix
+    2025-26: match-dix
+    2024-25: match-dix
+    2023-24: dixies
+  bio: null
+  contact: null
+  photo: null
+- id: paul_hammerberg
+  displayName: Paul Hammerberg
+  seasons:
+    2026-27: royal-dix
+    2025-26: match-dix
+  bio: null
+  contact: null
+  photo: null
+- id: robin_jakobsson
+  displayName: Robin Jakobsson
+  seasons:
+    2026-27: ????
+    2025-26: match-dix
+  bio: null
+  contact: null
+  photo: null
+- id: behrooz_moghadam
+  displayName: Behrooz Moghadam
+  seasons:
+    2026-27: ????
+    2025-26: match-dix
+  bio: null
+  contact: null
+  photo: null
+- id: graham_mcsorley
+  displayName: Graham Mcsorley
+  seasons:
+    2026-27: ????
+    2025-26: match-dix
+  bio: null
+  contact: null
+  photo: null
+- id: chris_thompson
+  displayName: Chris Thompson
+  seasons:
+    2026-27: churchills
+    2025-26: churchills
+  bio: null
+  contact: (+34 633 549 764)
+  photo: null
+- id: pekka_lohi
+  displayName: Pekka Lohi
+  seasons:
+    2026-27: churchills
+    2025-26: churchills
+  bio: null
+  contact: null
+  photo: null
+- id: dave_english
+  displayName: Dave English
+  seasons:
+    2026-27: churchills
+    2025-26: churchills
+  bio: null
+  contact: null
+  photo: null
+- id: john_williams
+  displayName: John Williams
+  seasons:
+    2026-27: churchills
+    2025-26: churchills
+  bio: Captain of Churchills B team
+  contact: null
+  photo: null
+- id: glyn_skeggs
+  displayName: Glyn Skeggs
+  seasons:
+    2026-27: churchills
+    2025-26: churchills
+  bio: null
+  contact: null
+  photo: null
+- id: steve_flint
+  displayName: Steve Flint
+  seasons:
+    2026-27: churchills
+    2025-26: churchills
+  bio: null
+  contact: null
+  photo: null
+- id: ismo_virlander
+  displayName: Ismo Virlander
+  seasons:
+    2026-27: churchills
+    2025-26: churchills
+  bio: Well known best pool player in the league.
+  contact: null
+  photo: null
+- id: jack_thompson
+  displayName: Jack Thompson
+  seasons:
+    2026-27: churchills
+    2025-26: churchills
+  bio: null
+  contact: null
+  photo: null
+- id: dave_nugent
+  displayName: Dave Nugent
+  seasons:
+    2026-27: churchills
+    2025-26: churchills
+  bio: null
+  contact: null
+  photo: null
+- id: dan_chellos
+  displayName: Dan Chellos
+  seasons:
+    2026-27: churchills
+    2025-26: churchills
+  bio: null
+  contact: null
+  photo: null
+- id: kevin_pegram
+  displayName: Kevin Pegram
+  seasons:
+    2026-27: ????
+    2025-26: royal_oak
+    2024-25: mariners
+  bio: null
+  contact: (+34 711 006 326)
+  photo: null
+- id: steve_barker
+  displayName: Steve Barker
+  seasons:
+    2026-27: ????
+    2025-26: royal_oak
+  bio: null
+  contact: null
+  photo: null
+- id: alan_kane
+  displayName: Alan Kane
+  seasons:
+    2026-27: ????
+    2025-26: royal_oak
+  bio: null
+  contact: null
+  photo: null
+- id: trevor_dunn
+  displayName: Trevor Dunn
+  seasons:
+    2026-27: ????
+    2025-26: royal_oak
+  bio: null
+  contact: null
+  photo: null
+- id: deb_rogers
+  displayName: Deb Rogers
+  seasons:
+    2026-27: ????
+    2025-26: royal_oak
+  bio: null
+  contact: null
+  photo: null
+- id: mark_walsh
+  displayName: Mark Walsh
+  seasons:
+    2026-27: ????
+    2025-26: royal_oak
+  bio: null
+  contact: null
+  photo: null
+- id: karl_martin
+  displayName: Karl Martin
+  seasons:
+    2026-27: barquito
+    2025-26: royal_oak
+  bio: null
+  contact: null
+  photo: null
+- id: tony_pegram
+  displayName: Tony Pegram
+  seasons:
+    2026-27: ????
+    2025-26: royal_oak
+    2024-25: mariners
+  bio: null
+  contact: null
+  photo: null
+- id: kevin_smith
+  displayName: Kevin Smith
+  seasons:
+    2026-27: ????
+    2025-26: royal_oak
+  bio: null
+  contact: null
+  photo: null
+- id: debbi_pegram
+  displayName: Debbi Pegram
+  seasons:
+    2026-27: ????
+    2025-26: royal_oak
+    2024-25: mariners
+  bio: null
+  contact: null
+  photo: null
+- id: steve_westwood
+  displayName: Steve Westwood
+  seasons:
+    2026-27: ????
+    2025-26: royal_oak
+  bio: null
+  contact: null
+  photo: null
+- id: harry_demos
+  displayName: Harry Demopoulos
+  seasons:
+    2026-27: wobbly-dix
+    2025-26: dixies-dogs
+    2024-25: mariners
+  bio: null
+  contact: null
+  photo: null
+- id: pete_attrill
+  displayName: Pete Attrill
+  seasons:
+    2026-27: ????
+    2025-26: dixies-dogs
+    2024-25: dixies-dogs
+    2023-24: dixies-dodgers
+    2022-23: dixies-oldies
+    2021-22: dixies-oldies
+    2020-21: windmill-b
+  bio: Shit pool player, Captain of the team somehow.
+  contact: (+34 618 597 472)
+  photo: null
+- id: steve_lewis
+  displayName: Steve Lewis
+  seasons:
+    2026-27: wobbly-dix
+    2025-26: dixies-dogs
+    2024-25: dixies-dogs
+    2023-24: match-inn
+  bio: null
+  contact: null
+  photo: null
+- id: paul_demos
+  displayName: Paul Demopoulos
+  seasons:
+    2026-27: ????
+    2025-26: dixies-dogs
+    2024-25: mariners
+  bio: null
+  contact: null
+  photo: null
+- id: mike_johnson
+  displayName: Mike Johnson
+  seasons:
+    2026-27: wobbly-dix
+    2025-26: dixies-dogs
+    2024-25: dixies-dodgers
+  bio: null
+  contact: null
+  photo: null
+- id: craig_fenwick
+  displayName: Craig Fenwick
+  seasons:
+    2026-27: ????
+    2025-26: dixies-dogs
+  bio: null
+  contact: null
+  photo: null
+- id: jonas_loefgren
+  displayName: Jonas Loefgren
+  seasons:
+    2026-27: ????
+    2025-26: dixies-dogs
+  bio: null
+  contact: null
+  photo: null
+- id: jay_cochrane
+  displayName: Jay Cochrane
+  seasons:
+    2026-27: ????
+    2025-26: dixies-dogs
+  bio: null
+  contact: null
+  photo: null
+- id: anatoliy_samorodskly
+  displayName: Anatoliy Samorodskly
+  seasons:
+    2026-27: wobbly-dix
+    2025-26: dixies-dogs
+  bio: null
+  contact: null
+  photo: null
+- id: alex_thibau
+  displayName: Alex Thibau
+  seasons:
+    2026-27: ????
+    2025-26: lindas
+  bio: null
+  contact: null
+  photo: null
+- id: joanes_hoj
+  displayName: Joanes H&j
+  seasons:
+    2026-27: ????
+    2025-26: lindas
+  bio: null
+  contact: null
+  photo: null
+- id: peter_olsen
+  displayName: Peter Olsen
+  seasons:
+    2026-27: ????
+    2025-26: lindas
+  bio: null
+  contact: null
+  photo: null
+- id: kurt_petersen
+  displayName: Kurt Petersen
+  seasons:
+    2026-27: ????
+    2025-26: lindas
+  bio: null
+  contact: null
+  photo: null
+- id: allan_pedersen
+  displayName: Alan Pedersen
+  seasons:
+    2026-27: ????
+    2025-26: lindas
+  bio: null
+  contact: null
+  photo: null
+- id: kim_jensen
+  displayName: Kim Jensen
+  seasons:
+    2026-27: ????
+    2025-26: lindas
+  bio: null
+  contact: null
+  photo: null
+- id: michael_kop
+  displayName: Michael Kop
+  seasons:
+    2026-27: ????
+    2025-26: lindas
+  bio: null
+  contact: null
+  photo: null
+- id: henrik_forsberg
+  displayName: Henrick Forsberg
+  seasons:
+    2026-27: ????
+    2025-26: lindas
+  bio: null
+  contact: null
+  photo: null
+- id: stig_klitgaard
+  displayName: Stig Klitgaard
+  seasons:
+    2026-27: ????
+    2025-26: lindas
+  bio: null
+  contact: null
+  photo: null
+- id: pop_nielsen
+  displayName: Pop Nielsen
+  seasons:
+    2026-27: ????
+    2025-26: lindas
+  bio: null
+  contact: null
+  photo: null
+- id: martyn_hirst
+  displayName: Martyn Hirst
+  seasons:
+    2026-27: ????
+    2025-26: lindas
+  bio: null
+  contact: null
+  photo: null
+- id: thomas_ebert
+  displayName: Thomas Ebert
+  seasons:
+    2026-27: ????
+    2025-26: lindas
+  bio: null
+  contact: null
+  photo: null
+- id: peter_lovnes_lants
+  displayName: Peter L&vnes Lants
+  seasons:
+    2026-27: cpt-murph
+    2025-26: lindas
+  bio: null
+  contact: null
+  photo: null
+- id: james_perret
+  displayName: James Perret
+  seasons:
+    2026-27: ????
+    2025-26: lindas
+  bio: null
+  contact: null
+  photo: null
+- id: peter_bondersen
+  displayName: Peter Bondersen
+  seasons:
+    2026-27: ????
+    2025-26: lindas
+  bio: null
+  contact: null
+  photo: null
+- id: stephanie_risum
+  displayName: Stephanie Risum
+  seasons:
+    2026-27: ????
+    2025-26: lindas
+  bio: null
+  contact: null
+  photo: null
+- id: viggo_olsen
+  displayName: Viggo Olsen
+  seasons:
+    2026-27: ????
+    2025-26: lindas
+  bio: null
+  contact: null
+  photo: null
+- id: alan_christoffersen
+  displayName: Alan Christoffersen
+  seasons:
+    2026-27: ????
+    2025-26: lindas
+  bio: null
+  contact: null
+  photo: null
+- id: paul_dady
+  displayName: Paul Dady
+  seasons:
+    2026-27: N/A
+    2025-26: wobbly
+  bio: null
+  contact: null
+  photo: null
+- id: ash
+  displayName: Ash Melvin
+  seasons:
+    2026-27: wobbly
+    2025-26: wobbly
+  bio: Captain of the Wobbly Penguin A team.
+  contact: (+44 753 806 14 05)
+  photo: null
+- id: phil_roscoe
+  displayName: Phil Roscoe
+  seasons:
+    2026-27: wobbly
+    2025-26: wobbly
+  bio: null
+  contact: null
+  photo: null
+- id: gareth_mehighan
+  displayName: Gareth Mehigan
+  seasons:
+    2026-27: ????
+    2025-26: wobbly
+  bio: null
+  contact: null
+  photo: null
+- id: wendy_witney
+  displayName: Wendy Witney
+  seasons:
+    2026-27: wobbly
+    2025-26: wobbly
+  bio: null
+  contact: null
+  photo: null
+- id: geoff_pease
+  displayName: Geoff Pease
+  seasons:
+    2026-27: wobbly
+    2025-26: wobbly
+  bio: null
+  contact: null
+  photo: null
+- id: lola
+  displayName: Lola Parras Balbin
+  seasons:
+    2026-27: wobbly
+    2025-26: wobbly
+  bio: null
+  contact: null
+  photo: null
+- id: arron_melvin
+  displayName: Arron Melvin
+  seasons:
+    2026-27: wobbly
+    2025-26: wobbly
+  bio: null
+  contact: null
+  photo: null
+- id: turko_hamza
+  displayName: Turko Hamza
+  seasons:
+    2026-27: harritas
+    2025-26: harritas
+  bio: null
+  contact: (+34 663 137 898)
+  photo: null
+- id: naza_marchesi
+  displayName: Naza Marchesi
+  seasons:
+    2026-27: harritas
+    2025-26: harritas
+  bio: null
+  contact: null
+  photo: null
+- id: corben_hendy
+  displayName: Corben Hendy
+  seasons:
+    2026-27: harritas
+    2025-26: harritas
+  bio: null
+  contact: null
+  photo: null
+- id: naoimi_santana
+  displayName: Naoimi Santan
+  seasons:
+    2026-27: harritas
+    2025-26: harritas
+  bio: null
+  contact: null
+  photo: null
+- id: paola_vilanova
+  displayName: Paola Vilanova
+  seasons:
+    2026-27: harritas
+    2025-26: harritas
+  bio: null
+  contact: null
+  photo: null
+- id: carmen_nina_mota
+  displayName: Carmen Ni&a Mota
+  seasons:
+    2026-27: harritas
+    2025-26: harritas
+  bio: null
+  contact: null
+  photo: null
+- id: ivan_guru
+  displayName: Ivan Guru
+  seasons:
+    2026-27: harritas
+    2025-26: harritas
+  bio: null
+  contact: null
+  photo: null
+- id: azahara_leon
+  displayName: Azahara Leon
+  seasons:
+    2026-27: harritas
+    2025-26: harritas
+  bio: null
+  contact: null
+  photo: null
+- id: pantoja_gonzalez_padilla
+  displayName: Pantoja Gonzalez Padilla
+  seasons:
+    2026-27: harritas
+    2025-26: harritas
+  bio: null
+  contact: null
+  photo: null
+- id: julia_deyavi
+  displayName: Julia Deyavi
+  seasons:
+    2026-27: harritas
+    2025-26: harritas
+  bio: null
+  contact: null
+  photo: null
+- id: paula_molina
+  displayName: Paula Molina
+  seasons:
+    2026-27: harritas
+    2025-26: harritas
+  bio: null
+  contact: null
+  photo: null
+- id: tanja_levalampi
+  displayName: Tanja Levalampi
+  seasons:
+    2026-27: wobbly-dix
+    2025-26: dixies-dodgers
+  bio: null
+  contact: null
+  photo: null
+- id: belinda_ottaway
+  displayName: Belinda Ottaway
+  seasons:
+    2026-27: ????
+    2025-26: dixies-dodgers
+  bio: null
+  contact: null
+  photo: null
+- id: alfredo_vega
+  displayName: Alfredo Vega
+  seasons:
+    2026-27: wobbly-dix
+    2025-26: dixies-dodgers
+  bio: null
+  contact: null
+  photo: null
+- id: andrea_durst
+  displayName: Andrea Durst
+  seasons:
+    2026-27: wobbly-dix
+    2025-26: dixies-dodgers
+  bio: null
+  contact: null
+  photo: null
+- id: vadims_dunuskins
+  displayName: Vadims Dunuskins
+  seasons:
+    2026-27: wobbly-dix
+    2025-26: dixies-dodgers
+  bio: null
+  contact: null
+  photo: null
+- id: tobias_koeleman
+  displayName: Tobias Koeleman
+  seasons:
+    2026-27: N/A
+    2025-26: dixies-dodgers
+  bio: null
+  contact: null
+  photo: null
+- id: kristoffer_kragstad
+  displayName: Kristoffer Kragstad
+  seasons:
+    2026-27: ????
+    2025-26: dixies-dodgers
+  bio: null
+  contact: null
+  photo: null
+- id: sari_virtanen
+  displayName: Sari Virtanen
+  seasons:
+    2026-27: wobbly-dix
+    2025-26: dixies-dodgers
+  bio: null
+  contact: null
+  photo: null
+- id: clayton_thomas
+  displayName: Clayton Thomas
+  seasons:
+    2026-27: wobbly-dix
+    2025-26: dixies-dodgers
+  bio: null
+  contact: null
+  photo: null
+- id: stevie_ellis
+  displayName: Stevie Ellis
+  seasons:
+    2026-27: pink-ladies
+  bio: Team captain of the Pink Ladies Team.
+  contact: (+34 600 277 333)
+  photo: null
+- id: sam_shimmin
+  displayName: Sam Shimmin
+  seasons:
+    2026-27: pink-ladies
+  bio: null
+  contact: null
+  photo: null
+- id: claire_windmill
+  displayName: Claire Windmill
+  seasons:
+    2026-27: pink-ladies
+  bio: null
+  contact: null
+  photo: null
+- id: jeanette_mathews
+  displayName: Jeanette Mathews
+  seasons:
+    2026-27: pink-ladies
+  bio: null
+  contact: null
+  photo: null
+- id: ben_morgan
+  displayName: Ben Morgan
+  seasons:
+    2026-27: pink-ladies
+  bio: null
+  contact: null
+  photo: null
+- id: paula_metcalfe
+  displayName: Paula Metcalfe
+  seasons:
+    2026-27: pink-ladies
+  bio: null
+  contact: null
+  photo: null
+- id: annette_ferris
+  displayName: Annette Ferris
+  seasons:
+    2026-27: pink-ladies
+  bio: null
+  contact: null
+  photo: null
+- id: jayne_thompson
+  displayName: Jayne Thompson
+  seasons:
+    2026-27: ballers
+    2025-26: ballers
+  bio: null
+  contact: null
+  photo: null
+- id: karen_quigley
+  displayName: Karen Quigley
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: sue_conner_dow
+  displayName: Sue Conner-Dow
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: edmee_de_yong
+  displayName: Edmee De Yong
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: vera_wubs
+  displayName: Vera Wubs
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: cathrerine_coombes
+  displayName: Catherine Coombes
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: eddie_obrien
+  displayName: Eddie Obrien
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: eugene_obrien
+  displayName: Eugene Obrien
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: mia_ahrentorp
+  displayName: Mia Ahrentorp
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: ashleigh_mcdermott
+  displayName: Ashleigh McDermott
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: sofia_mccann
+  displayName: Sof&a McCann
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: johan_fagerstrom
+  displayName: Johan Fagerstr&m
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: magda_mykowska
+  displayName: Magda Mykowska
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: michelle_barnes
+  displayName: Michelle Long Barnes
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: nikki_lawes
+  displayName: Nikki Lawes
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: pelle_anderberg
+  displayName: Pelle Anderberg
+  seasons:
+    2026-27: ????
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: sarah_mcgeoghegan
+  displayName: Sarah Mcgeoghegan
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: michelle_norris
+  displayName: Michelle Norris
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: sten_linder
+  displayName: Sten Linder
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: mary_lawes
+  displayName: Mary Lawes
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: nasrin_bijvoets
+  displayName: Nasrin Bijvoets
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: nancy_hovik
+  displayName: Nancy Hovik
+  seasons:
+    2026-27: hotshots
+    2025-26: hotshots
   bio: null
   contact: null
   photo: null
