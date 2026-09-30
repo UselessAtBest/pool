@@ -96,16 +96,12 @@ module PageViews
       body = "<div class=\"empty-state\">#{V.i18n('fixtures.none', 'No fixtures published yet.')}</div>"
     else
       body = weeks.map do |w|
-        status_class = w['played'] ? 'played' : 'upcoming'
-        status_text = w['played'] ? V.i18n('badge.played', 'Played') : V.i18n('badge.upcoming', 'Upcoming')
-        cards = w['matches'].map { |m| V.match_card(data, site, m) }.join
         <<~HTML
           <div class="section">
             <div class="section-head">
-              <h2><a href="#{V.week_url(site, w['number'])}">#{V.i18n('common.week', "Week #{w['number']}", { 'n' => w['number'] })}</a> &middot; #{V.fmt_date(w['date'])}</h2>
-              <span class="badge #{status_class}">#{status_text}</span>
+              <h2><a href="#{V.week_url(site, w['number'])}">#{V.i18n('common.week', "Week #{w['number']}", { 'n' => w['number'] })}</a></h2>
             </div>
-            <div class="card-grid">#{cards}</div>
+            #{V.week_box(data, site, w)}
           </div>
         HTML
       end.join
