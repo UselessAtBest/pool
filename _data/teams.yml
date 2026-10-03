@@ -336,6 +336,7 @@
   image: null
   activeSeasons:
   - 2025-26
+  - 2026-27
   hiddenFromCurrentSeason: true
 - id: boulevard
   displayName: Boulevard
@@ -346,5 +347,5 @@
   info: null
   image: null
   activeSeasons:
-  - 2025-26
+  - 2026-27
   hiddenFromCurrentSeason: true
