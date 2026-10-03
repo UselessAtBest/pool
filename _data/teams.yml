@@ -337,15 +337,15 @@
   activeSeasons:
   - 2025-26
   - 2026-27
-  hiddenFromCurrentSeason: true
+  hiddenFromCurrentSeason: false
 - id: boulevard
   displayName: Boulevard
   venue: Sunset Boulevard
   address: ????
   captain: Allan Pedersen
-  venueOwner: kevin_pegram
+  venueOwner: puii_lalrustpuii
   info: null
   image: null
   activeSeasons:
   - 2026-27
-  hiddenFromCurrentSeason: true
+  hiddenFromCurrentSeason: false
