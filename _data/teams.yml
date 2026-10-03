@@ -268,7 +268,7 @@
   - 2024-25
   - 2025-26
   hiddenFromCurrentSeason: true
-- id: match-inn
+- id: match_inn
   displayName: Match Inn
   venue: Match Inn Bar
   address: ????
@@ -331,6 +331,17 @@
   venue: The Royal Oak
   address: ????
   captain: kevin_pegram
+  venueOwner: kevin_pegram
+  info: null
+  image: null
+  activeSeasons:
+  - 2025-26
+  hiddenFromCurrentSeason: true
+- id: boulevard
+  displayName: Boulevard
+  venue: Sunset Boulevard
+  address: ????
+  captain: Allan Pedersen
   venueOwner: kevin_pegram
   info: null
   image: null
