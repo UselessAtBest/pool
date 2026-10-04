@@ -64,7 +64,7 @@
 - id: wobbly
   displayName: Wobbly Penguin
   venue: Wobbly Penguin
-  address: ????
+  address: Francisco El Cano, 25
   captain: ash
   venueOwner: alan_craine
   info: null
@@ -76,7 +76,7 @@
 - id: royal_dix
   displayName: The Royal Dix
   venue: The Royal Oak
-  address: ????
+  address: Calle Reyes Catolicos 25
   captain: tom_hughs
   venueOwner: kevin_pegram
   info: null
@@ -87,7 +87,7 @@
 - id: churchills
   displayName: Churchills
   venue: Churchills
-  address: ????
+  address: C. Jorge Guillén
   captain: john_williams
   venueOwner: stevie_ellis
   info: null
@@ -101,7 +101,7 @@
 - id: pink_ladies
   displayName: Churchills Pink Ladies
   venue: Churchills
-  address: ????
+  address: C. Jorge Guillén
   captain: stevie_ellis
   venueOwner: stevie_ellis
   info: null
@@ -118,7 +118,7 @@
 - id: barquito
   displayName: El Barquito
   venue: El Barquito
-  address: ????
+  address: Calle Independencia 19
   captain: karl_martin
   venueOwner: karl_martin
   info: null
@@ -129,8 +129,8 @@
 - id: wobbly_dix
   displayName: The Wobbly Dix
   venue: Wobbly Penguin
-  address: ????
-  captain: TBD
+  address: Francisco El Cano, 25
+  captain: pete_attrill
   venueOwner: alan_craine
   info: null
   image: null
@@ -140,7 +140,7 @@
 - id: smokeys_m
   displayName: Smokeys Men
   venue: Smokeys
-  address: ????
+  address: Calle De La Cruz 9
   captain: kev_mulligan
   venueOwner: hans_wijnands
   info: null
@@ -152,9 +152,9 @@
   - 2026-27
   hiddenFromCurrentSeason: false
 - id: cpt_murph
-  displayName: Captain Murphys
+  displayName: Captain’n
   venue: Captain Murphys
-  address: ????
+  address: Calle Lamo de Espinosa 3
   captain: peter_lovnes_lants
   venueOwner: ????
   info: null
@@ -165,7 +165,7 @@
 - id: hotshots
   displayName: Smokeys Hot-Shotz
   venue: Smokeys
-  address: ????
+  address: Calle De La Cruz 9
   captain: edmee_de_yong
   venueOwner: hans_wijnands
   info: null
@@ -329,7 +329,7 @@
 - id: royal_oak
   displayName: The Royal Oak
   venue: The Royal Oak
-  address: ????
+  address: Calles Reyes Católicos 25
   captain: kevin_pegram
   venueOwner: kevin_pegram
   info: null
@@ -341,7 +341,7 @@
 - id: boulevard
   displayName: Boulevard
   venue: Sunset Boulevard
-  address: ????
+  address: Paseo Marítimo Rey de España 36
   captain: Allan Pedersen
   venueOwner: puii_lalrustpuii
   info: null
