@@ -70,7 +70,7 @@ const I18N = {
 
     'team.eyebrow': 'Team',
     'team.venue': 'Venue',
-    'team.venue_owner': 'Venue owner',
+    'team.venue_owner': 'Venue Contact',
     'team.captain': 'Captain',
     'team.season': 'Season',
     'team.season_stats': 'Season stats',
@@ -201,7 +201,7 @@ const I18N = {
 
     'team.eyebrow': 'Equipo',
     'team.venue': 'Sede',
-    'team.venue_owner': 'Dueño de la sede',
+    'team.venue_owner': 'Contacto de la sede',
     'team.captain': 'Capitán',
     'team.season': 'Temporada',
     'team.season_stats': 'Estadísticas de la temporada',
