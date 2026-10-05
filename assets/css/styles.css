@@ -224,7 +224,7 @@ main { flex: 1; padding: 32px 0 64px; }
 .page-header p { color: var(--text-muted); margin: 6px 0 0; }
 .eyebrow {
   text-transform: uppercase; letter-spacing: .12em; font-size: .72rem;
-  color: var(--primary); font-weight: 700; margin-bottom: 6px;
+  color: var(--primary); font-weight: 700; margin-bottom: 6px; padding-top: 10px;
 }
 
 /* ============ Cards ============ */
