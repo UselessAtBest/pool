@@ -139,6 +139,7 @@ button { font-family: inherit; }
   padding: 8px 12px;
   border-radius: 8px;
   transition: background .15s, color .15s;
+  white-space: nowrap;
 }
 .nav-links a:hover { color: var(--text); text-decoration: none; background: var(--primary-soft); }
 .nav-links a.active { color: var(--text); background: var(--primary-soft); }
@@ -173,22 +174,26 @@ button { font-family: inherit; }
 }
 .lang-toggle:hover { border-color: var(--primary); }
 
-.nav-toggle {
-  display: none;
-  background: none; border: 1px solid var(--border); color: var(--text);
-  border-radius: 8px; width: 38px; height: 38px; cursor: pointer; font-size: 1.1rem;
-}
-
+/* Mobile nav: no collapsing dropdown - every link is always visible,
+ * wrapped onto its own full-width row below the brand/toggles row. */
 @media (max-width: 720px) {
-  .nav-inner { flex-wrap: wrap; }
-  .nav-toggle { display: flex; align-items: center; justify-content: center; order: 2; margin-left: auto; }
-  .lang-toggle { order: 3; }
-  .theme-toggle { order: 4; }
+  .nav-inner { flex-wrap: wrap; row-gap: 10px; }
+  .lang-toggle { order: 2; margin-left: auto; }
+  .theme-toggle { order: 3; }
   .nav-links {
-    order: 5; width: 100%; flex-direction: column; gap: 2px;
-    max-height: 0; overflow: hidden;
+    order: 4;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 6px;
   }
-  .nav-links.open { max-height: 400px; padding-top: 8px; }
+  .nav-links a {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 9px 10px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+  .nav-links a.active { border-color: var(--primary); }
 }
 
 /* ============ Main / footer ============ */
@@ -204,11 +209,22 @@ main { flex: 1; padding: 32px 0 64px; }
 .site-footer a { color: var(--text-muted); text-decoration: underline; }
 
 /* ============ Page header ============ */
-.page-header { margin-bottom: 24px; }
+.page-header {
+  margin-bottom: 24px;
+  transition: opacity .2s ease, max-height .25s ease, margin .25s ease;
+  max-height: 600px;
+  overflow: hidden;
+}
+.page-header.page-header-hidden {
+  opacity: 0;
+  max-height: 0;
+  margin-bottom: 0;
+  pointer-events: none;
+}
 .page-header p { color: var(--text-muted); margin: 6px 0 0; }
 .eyebrow {
   text-transform: uppercase; letter-spacing: .12em; font-size: .72rem;
-  color: var(--primary); font-weight: 700; margin-bottom: 6px; padding-top: 10px
+  color: var(--primary); font-weight: 700; margin-bottom: 6px;
 }
 
 /* ============ Cards ============ */
@@ -252,23 +268,6 @@ main { flex: 1; padding: 32px 0 64px; }
 
 .match-meta { display: flex; justify-content: space-between; align-items: center; font-size: .8rem; color: var(--text-muted); }
 
-/* ============ Week box (home page: one card per week, one line per match) ============ */
-.week-box { padding: 18px 20px; }
-.week-box-date {
-  font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: .95rem;
-  margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: space-between; gap: 10px;
-}
-.week-line {
-  display: flex; align-items: center; gap: 10px;
-  padding: 9px 0; border-bottom: 1px solid var(--border); flex-wrap: wrap;
-}
-.week-line:last-child { border-bottom: none; }
-.wl-team { flex: 1; min-width: 0; font-weight: 600; font-family: 'Space Grotesk', sans-serif; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.wl-team-right { text-align: right; }
-.wl-score { font-weight: 700; white-space: nowrap; min-width: 60px; text-align: center; }
-.btn-sm { padding: 4px 10px; font-size: .74rem; }
-
 .badge {
   display: inline-block;
   font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em;
@@ -295,6 +294,13 @@ main { flex: 1; padding: 32px 0 64px; }
   background: transparent; border: 1px solid var(--border); color: var(--text);
 }
 .btn-ghost:hover { border-color: var(--primary); background: var(--primary-soft); }
+.btn-sm { padding: 4px 10px; font-size: .74rem; }
+
+/* A BYE entry isn't a real team, so it's shown plain (no link styling) */
+.team-bye {
+  color: var(--text-muted);
+  font-style: italic;
+}
 
 /* ============ Tables / rankings ============ */
 .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
@@ -314,7 +320,7 @@ th.sortable { cursor: pointer; user-select: none; }
 th.sortable:hover { color: var(--text); }
 th.sort-active { color: var(--primary); }
 
-/* the circled/highlighted total-points column — the site's signature mark */
+/* the circled/highlighted total-points column - the site's signature mark */
 .points-ball {
   display: inline-flex; align-items: center; justify-content: center;
   width: 34px; height: 34px; border-radius: 50%;
@@ -386,6 +392,22 @@ th.sort-active { color: var(--primary); }
   .game-row { grid-template-columns: 1fr; text-align: center; gap: 4px; }
   .game-side-a, .game-side-b { justify-content: center; text-align: center; }
 }
+
+/* ============ Week box (home / fixtures: one card per week, one line per match) ============ */
+.week-box { padding: 18px 20px; }
+.week-box-date {
+  font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: .95rem;
+  margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+}
+.week-line {
+  display: flex; align-items: center; gap: 10px;
+  padding: 9px 0; border-bottom: 1px solid var(--border); flex-wrap: wrap;
+}
+.week-line:last-child { border-bottom: none; }
+.wl-team { flex: 1; min-width: 0; font-weight: 600; font-family: 'Space Grotesk', sans-serif; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.wl-team-right { text-align: right; }
+.wl-score { font-weight: 700; white-space: nowrap; min-width: 60px; text-align: center; }
 
 /* ============ Rules / prose ============ */
 .prose { max-width: 720px; line-height: 1.7; }

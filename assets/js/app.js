@@ -22,15 +22,36 @@ function initTheme() {
   }
 }
 
-/* ---- mobile nav ---- */
-function initMobileNav() {
-  const toggle = document.getElementById('nav-toggle');
-  const links = document.getElementById('nav-links');
-  if (!toggle || !links) return;
-  toggle.addEventListener('click', () => links.classList.toggle('open'));
-  links.addEventListener('click', (e) => {
-    if (e.target.closest('a')) links.classList.remove('open');
-  });
+/* ---- hide the page title on scroll down, reveal on scroll up ----
+ * The nav bar itself is already position:sticky in CSS and is untouched by
+ * this - only the per-page .page-header block (the big heading under the
+ * nav) responds to scroll direction. */
+function initScrollHeader() {
+  const header = document.querySelector('.page-header');
+  if (!header) return;
+
+  let lastY = window.scrollY;
+  let ticking = false;
+
+  function onScroll() {
+    const currentY = window.scrollY;
+    if (Math.abs(currentY - lastY) > 4) {
+      if (currentY > lastY && currentY > 60) {
+        header.classList.add('page-header-hidden');
+      } else {
+        header.classList.remove('page-header-hidden');
+      }
+      lastY = currentY;
+    }
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(onScroll);
+      ticking = true;
+    }
+  }, { passive: true });
 }
 
 /* ---- language ----
@@ -73,6 +94,6 @@ function initLangToggle() {
 (function init() {
   initLang();
   initTheme();
-  initMobileNav();
+  initScrollHeader();
   initLangToggle();
 })();
