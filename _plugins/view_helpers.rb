@@ -2,8 +2,20 @@ require 'cgi'
 require 'date'
 
 module ViewHelpers
+  PLACEHOLDER_VALUES = ['????', '???', '??', '?', 'tbd', 'n/a', 'na', 'unknown', ''].freeze
+
   def self.esc(s)
     CGI.escapeHTML(s.to_s)
+  end
+
+  def self.looks_like_placeholder?(val)
+    return true if val.nil?
+    PLACEHOLDER_VALUES.include?(val.to_s.strip.downcase)
+  end
+
+  def self.bye?(name)
+    return false if name.nil?
+    name.to_s.strip.upcase.gsub(/[^A-Z]/, '') == 'BYE'
   end
 
   def self.base_url(site, path)
@@ -23,13 +35,16 @@ module ViewHelpers
   def self.fmt_date(iso)
     return 'TBC' if iso.nil? || iso.strip.empty?
     begin
-      Date.parse(iso).strftime('%A, %B %-d, %Y')
+      Date.parse(iso).strftime('%B %-d, %Y')
     rescue ArgumentError
       iso
     end
   end
 
+  # A team name in running text/tables: a real link to that team's page,
+  # except for a BYE entry, which isn't a team and has no page to link to.
   def self.team_link(data, site, name)
+    return "<span class=\"team-bye\">#{esc(name)}</span>" if bye?(name)
     slug = LeagueData.slugify(name)
     "<a href=\"#{base_url(site, '/teams/' + slug + '/')}\">#{esc(name)}</a>"
   end
@@ -46,6 +61,17 @@ module ViewHelpers
     return i18n('common.dash', '&mdash;') if raw.nil? || raw.to_s.strip.empty?
     return player_link(data, site, raw) if data['playersById'][raw]
     esc(raw)
+  end
+
+  # A venue's address, as a link to a Google Maps search for that address
+  # (combined with the venue name for a more accurate match) - unless the
+  # address is a placeholder like "????", in which case there's nothing
+  # real to search for and it's shown as plain text instead.
+  def self.maps_link(venue, address)
+    return esc(address) if looks_like_placeholder?(address)
+    query_parts = [venue, address].reject { |v| looks_like_placeholder?(v) }
+    url = "https://www.google.com/maps/search/?api=1&query=#{CGI.escape(query_parts.join(', '))}"
+    "<a href=\"#{url}\" target=\"_blank\" rel=\"noopener\">#{esc(address)}</a>"
   end
 
   def self.match_url(site, home_name, away_name)
@@ -196,6 +222,7 @@ module ViewHelpers
     HTML
   end
 
+  # Column order: # | Team | Points | Matches | Games Won | Matches Won | [detailed: Win% | Home Win% | Away Win%]
   def self.team_rank_table(data, site, standings, detailed)
     detailed_head = detailed ? "<th class=\"num\">#{i18n('table.win_pct', 'Win %')}</th><th class=\"num\">#{i18n('table.home_win_pct', 'Home Win %')}</th><th class=\"num\">#{i18n('table.away_win_pct', 'Away Win %')}</th>" : ''
     rows = standings.each_with_index.map do |s, i|
@@ -210,11 +237,11 @@ module ViewHelpers
         <tr>
           <td>#{i + 1}</td>
           <td>#{team_link(data, site, s['team']['displayName'])}</td>
+          <td class="num"><span class="points-ball">#{s['points']}</span></td>
           <td class="num">#{s['matchesPlayed']}</td>
           <td class="num">#{s['gamesWon']}</td>
           <td class="num">#{s['matchesWon']}</td>
           #{detailed_cells}
-          <td class="num"><span class="points-ball">#{s['points']}</span></td>
         </tr>
       HTML
     end.join
@@ -223,15 +250,16 @@ module ViewHelpers
       <div class="table-wrap"><table>
         <thead><tr>
           <th>#{i18n('table.hash', '#')}</th><th>#{i18n('table.team', 'Team')}</th>
+          <th class="num">#{i18n('table.points', 'Points')}</th>
           <th class="num">#{i18n('table.matches', 'Matches')}</th><th class="num">#{i18n('table.games_won', 'Games Won')}</th><th class="num">#{i18n('table.matches_won', 'Matches Won')}</th>
           #{detailed_head}
-          <th class="num">#{i18n('table.points', 'Points')}</th>
         </tr></thead>
         <tbody>#{rows}</tbody>
       </table></div>
     HTML
   end
 
+  # Column order: # | Player | Team | Points | Games Played | [detailed: Games Won | Doubles Played | Doubles Won | Doubles Win% | Clearances] | Win %
   def self.player_rank_table(data, site, standings, detailed)
     detailed_head = detailed ? "<th class=\"num\">#{i18n('table.games_won', 'Games Won')}</th><th class=\"num\">#{i18n('table.doubles_played', 'Doubles Played')}</th><th class=\"num\">#{i18n('table.doubles_won', 'Doubles Won')}</th><th class=\"num\">#{i18n('table.doubles_win_pct', 'Doubles Win %')}</th><th class=\"num\">#{i18n('table.clearances_col', 'Clearances')}</th>" : ''
     season = data['season']
@@ -251,10 +279,10 @@ module ViewHelpers
           <td>#{i + 1}</td>
           <td>#{player_link(data, site, s['player']['id'])}</td>
           <td>#{team_cell}</td>
+          <td class="num"><span class="points-ball">#{s['totalPoints']}</span></td>
           <td class="num">#{s['singlesPlayed']}</td>
           #{detailed_cells}
           <td class="num">#{s['winPct'].round}%</td>
-          <td class="num"><span class="points-ball">#{s['totalPoints']}</span></td>
         </tr>
       HTML
     end.join
@@ -263,10 +291,10 @@ module ViewHelpers
       <div class="table-wrap"><table>
         <thead><tr>
           <th>#{i18n('table.hash', '#')}</th><th>#{i18n('table.player', 'Player')}</th><th>#{i18n('table.team', 'Team')}</th>
+          <th class="num">#{i18n('table.points', 'Points')}</th>
           <th class="num">#{i18n('table.games_played', 'Games Played')}</th>
           #{detailed_head}
           <th class="num">#{i18n('table.win_pct', 'Win %')}</th>
-          <th class="num">#{i18n('table.points', 'Points')}</th>
         </tr></thead>
         <tbody>#{rows}</tbody>
       </table></div>

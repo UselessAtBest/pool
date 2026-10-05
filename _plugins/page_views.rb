@@ -226,8 +226,8 @@ module PageViews
       <div class="two-col section">
         <div class="card">
           <h3>#{V.i18n('team.venue', 'Venue')}</h3>
-          <p>#{V.esc(tm['venue'])}<br>#{V.esc(tm['address'])}</p>
-          <h3 style="margin-top:16px;">#{V.i18n('team.venue_owner', 'Venue owner')}</h3>
+          <p>#{V.esc(tm['venue'])}<br>#{V.maps_link(tm['venue'], tm['address'])}</p>
+          <h3 style="margin-top:16px;">#{V.i18n('team.venue_owner', 'Venue Contact')}</h3>
           <p>#{V.venue_owner_link(data, site, tm['venueOwner'])}</p>
         </div>
         <div class="card">
