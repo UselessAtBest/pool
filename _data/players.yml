@@ -577,8 +577,8 @@
   bio: null
   contact: null
   photo: null
-- id: bob_wheelan
-  displayName: Bob Wheelan
+- id: bob_whelan
+  displayName: Bob Whelan
   seasons:
     2026-27: royal_dix
     2025-26: match_dix
@@ -1028,7 +1028,7 @@
 - id: thomas_ebert
   displayName: Thomas Ebert
   seasons:
-    2026-27: cpt_murph
+    2026-27: captain
     2025-26: lindas
   bio: null
   contact: null
@@ -1036,7 +1036,7 @@
 - id: peter_lovnes
   displayName: Peter Løvnes
   seasons:
-    2026-27: cpt_murph
+    2026-27: captain
     2025-26: lindas
   bio: null
   contact: null
@@ -1305,8 +1305,8 @@
   bio: Team captain of the Pink Ladies Team. Bar Contact for Churchills teams.
   contact: (+34 600 277 333)
   photo: null
-- id: sam_shimmin
-  displayName: Sam Shimmin
+- id: sam_shirmin
+  displayName: Sam Shirmin
   seasons:
     2026-27: pink_ladies
     2025-26: pink_ladies
@@ -1391,7 +1391,7 @@
   bio: null
   contact: null
   photo: null
-- id: cathrerine_coombes
+- id: catherine_coombes
   displayName: Catherine Coombes
   seasons:
     2026-27: hotshots
@@ -1593,91 +1593,112 @@
 - id: alexander_smedegaard
   displayName: Alexander Smedegaard
   seasons:
-    2026-27: cpt_murph
+    2026-27: captain
   bio: null
   contact: null
   photo: null
 - id: debbie_klockmann
   displayName: Debbie Klockmann
   seasons:
-    2026-27: cpt_murph
+    2026-27: captain
   bio: null
   contact: null
   photo: null
 - id: gorge_hagstrom
   displayName: Gorge Hagsrtom
   seasons:
-    2026-27: cpt_murph
+    2026-27: captain
   bio: null
   contact: null
   photo: null
 - id: hads_sorrensen
   displayName: Hads Jacob Sørensen
   seasons:
-    2026-27: cpt_murph
+    2026-27: captain
   bio: null
   contact: null
   photo: null
 - id: jan_gallov
   displayName: Jan Galløv
   seasons:
-    2026-27: cpt_murph
+    2026-27: captain
   bio: null
   contact: null
   photo: null
 - id: johnny_sorensen
   displayName: Johnny K Sørensen
   seasons:
-    2026-27: cpt_murph
+    2026-27: captain
   bio: null
   contact: null
   photo: null
 - id: martin_holm
   displayName: Martin Holm
   seasons:
-    2026-27: cpt_murph
+    2026-27: captain
   bio: null
   contact: null
   photo: null
 - id: michael_sorensen
   displayName: Michael K Sørensen
   seasons:
-    2026-27: cpt_murph
+    2026-27: captain
   bio: null
   contact: null
   photo: null
 - id: mick_andersen
   displayName: Mick Riis Andersen
   seasons:
-    2026-27: cpt_murph
+    2026-27: captain
   bio: null
   contact: null
   photo: null
 - id: ole_christensen
   displayName: Ole Christensen
   seasons:
-    2026-27: cpt_murph
+    2026-27: captain
   bio: null
   contact: null
   photo: null
 - id: peter_bondersen
   displayName: Peter Bondersen
   seasons:
-    2026-27: cpt_murph
+    2026-27: captain
   bio: null
   contact: null
   photo: null
 - id: tobias_liedicke
   displayName: Tobias Liedicke
   seasons:
-    2026-27: cpt_murph
+    2026-27: captain
   bio: null
   contact: null
   photo: null
 - id: ulrik_gallov
   displayName: Ulrik Galløv
   seasons:
-    2026-27: cpt_murph
+    2026-27: captain
+  bio: null
+  contact: null
+  photo: null
+- id: bernie_griffin
+  displayName: Bernie Griffin
+  seasons:
+    2026-27: pink_ladies
+  bio: null
+  contact: null
+  photo: null
+- id: claire_lerigo
+  displayName: Claire Lerigo
+  seasons:
+    2026-27: hotshots
+  bio: null
+  contact: null
+  photo: null
+- id: andy_warrilow
+  displayName: Andy Warrilow
+  seasons:
+    2026-27: royal_oak
   bio: null
   contact: null
   photo: null

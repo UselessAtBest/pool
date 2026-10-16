@@ -64,7 +64,7 @@
 - id: wobbly
   displayName: Wobbly Penguin
   venue: Wobbly Penguin
-  address: Francisco El Cano, 25
+  address: ????
   captain: ash
   venueOwner: alan_craine
   info: null
@@ -76,7 +76,7 @@
 - id: royal_dix
   displayName: The Royal Dix
   venue: The Royal Oak
-  address: Calle Reyes Catolicos 25
+  address: ????
   captain: tom_hughs
   venueOwner: kevin_pegram
   info: null
@@ -87,7 +87,7 @@
 - id: churchills
   displayName: Churchills
   venue: Churchills
-  address: C. Jorge Guillén
+  address: ????
   captain: john_williams
   venueOwner: stevie_ellis
   info: null
@@ -101,7 +101,7 @@
 - id: pink_ladies
   displayName: Churchills Pink Ladies
   venue: Churchills
-  address: C. Jorge Guillén
+  address: ????
   captain: stevie_ellis
   venueOwner: stevie_ellis
   info: null
@@ -118,7 +118,7 @@
 - id: barquito
   displayName: El Barquito
   venue: El Barquito
-  address: Calle Independencia 19
+  address: ????
   captain: karl_martin
   venueOwner: karl_martin
   info: null
@@ -129,8 +129,8 @@
 - id: wobbly_dix
   displayName: The Wobbly Dix
   venue: Wobbly Penguin
-  address: Francisco El Cano, 25
-  captain: pete_attrill
+  address: ????
+  captain: TBD
   venueOwner: alan_craine
   info: null
   image: null
@@ -140,7 +140,7 @@
 - id: smokeys_m
   displayName: Smokeys Men
   venue: Smokeys
-  address: Calle De La Cruz 9
+  address: ????
   captain: kev_mulligan
   venueOwner: hans_wijnands
   info: null
@@ -151,12 +151,12 @@
   - 2025-26
   - 2026-27
   hiddenFromCurrentSeason: false
-- id: cpt_murph
-  displayName: Captain’n
+- id: captain
+  displayName: Captain Murphys
   venue: Captain Murphys
-  address: Calle Lamo de Espinosa 3
-  captain: peter_lovnes
-  venueOwner: puii_lalrustpuii
+  address: ????
+  captain: peter_lovnes_lants
+  venueOwner: ????
   info: null
   image: null
   activeSeasons:
@@ -165,7 +165,7 @@
 - id: hotshots
   displayName: Smokeys Hot-Shotz
   venue: Smokeys
-  address: Calle De La Cruz 9
+  address: ????
   captain: edmee_de_yong
   venueOwner: hans_wijnands
   info: null
@@ -329,23 +329,22 @@
 - id: royal_oak
   displayName: The Royal Oak
   venue: The Royal Oak
-  address: Calles Reyes Católicos 25
+  address: ????
   captain: kevin_pegram
   venueOwner: kevin_pegram
   info: null
   image: null
   activeSeasons:
   - 2025-26
-  - 2026-27
-  hiddenFromCurrentSeason: false
+  hiddenFromCurrentSeason: true
 - id: boulevard
   displayName: Boulevard
   venue: Sunset Boulevard
-  address: Paseo Marítimo Rey de España 36
+  address: ????
   captain: Allan Pedersen
-  venueOwner: puii_lalrustpuii
+  venueOwner: kevin_pegram
   info: null
   image: null
   activeSeasons:
-  - 2026-27
-  hiddenFromCurrentSeason: false
+  - 2025-26
+  hiddenFromCurrentSeason: true
