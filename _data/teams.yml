@@ -33,7 +33,6 @@
   activeSeasons:
   - 2024-25
   - 2025-26
-  - 2026-27
   hiddenFromCurrentSeason: false
 - id: harriers
   displayName: Los Harriers Eagles
@@ -46,7 +45,6 @@
   activeSeasons:
   - 2024-25
   - 2025-26
-  - 2026-27
   hiddenFromCurrentSeason: false
 - id: harritas
   displayName: Las Harritas Eagles
@@ -59,12 +57,11 @@
   activeSeasons:
   - 2024-25
   - 2025-26
-  - 2026-27
   hiddenFromCurrentSeason: false
 - id: wobbly
-  displayName: Wobbly Penguin
+  displayName: Penguin Potters
   venue: Wobbly Penguin
-  address: ????
+  address: Francisco El Cano, 25
   captain: ash
   venueOwner: alan_craine
   info: null
@@ -76,7 +73,7 @@
 - id: royal_dix
   displayName: The Royal Dix
   venue: The Royal Oak
-  address: ????
+  address: Calle Reyes Catolicos 25
   captain: tom_hughs
   venueOwner: kevin_pegram
   info: null
@@ -87,7 +84,7 @@
 - id: churchills
   displayName: Churchills
   venue: Churchills
-  address: ????
+  address: Calle Jorge Guillén
   captain: john_williams
   venueOwner: stevie_ellis
   info: null
@@ -101,7 +98,7 @@
 - id: pink_ladies
   displayName: Churchills Pink Ladies
   venue: Churchills
-  address: ????
+  address: Calle Jorge Guillén
   captain: stevie_ellis
   venueOwner: stevie_ellis
   info: null
@@ -152,11 +149,11 @@
   - 2026-27
   hiddenFromCurrentSeason: false
 - id: captain
-  displayName: Captain Murphys
-  venue: Captain Murphys
-  address: ????
+  displayName: Captain 'N
+  venue: "Captain 'N"
+  address: Calle Lamo de Espinosa 3
   captain: peter_lovnes_lants
-  venueOwner: ????
+  venueOwner: peter_lovnes
   info: null
   image: null
   activeSeasons:
@@ -165,7 +162,7 @@
 - id: hotshots
   displayName: Smokeys Hot-Shotz
   venue: Smokeys
-  address: ????
+  address: Calle De La Cruz
   captain: edmee_de_yong
   venueOwner: hans_wijnands
   info: null
@@ -329,13 +326,14 @@
 - id: royal_oak
   displayName: The Royal Oak
   venue: The Royal Oak
-  address: ????
-  captain: kevin_pegram
+  address: Calle Reyes Catolicos 25
+  captain: mike_kenny
   venueOwner: kevin_pegram
   info: null
   image: null
   activeSeasons:
   - 2025-26
+  - 2026-27
   hiddenFromCurrentSeason: true
 - id: boulevard
   displayName: Boulevard
@@ -347,4 +345,5 @@
   image: null
   activeSeasons:
   - 2025-26
+  - 2026-27
   hiddenFromCurrentSeason: true
