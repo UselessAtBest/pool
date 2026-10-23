@@ -96,7 +96,7 @@
   - 2026-27
   hiddenFromCurrentSeason: false
 - id: pink_ladies
-  displayName: Churchills Pink Ladies
+  displayName: Pink Ladies
   venue: Churchills
   address: Calle Jorge Guillén
   captain: stevie_ellis
@@ -124,7 +124,7 @@
   - 2026-27
   hiddenFromCurrentSeason: false
 - id: wobbly_dix
-  displayName: The Wobbly Dix
+  displayName: Wobbly Dix
   venue: Wobbly Penguin
   address: ????
   captain: TBD
@@ -160,7 +160,7 @@
   - 2026-27
   hiddenFromCurrentSeason: false
 - id: hotshots
-  displayName: Smokeys Hot-Shotz
+  displayName: Hot-Shotz
   venue: Smokeys
   address: Calle De La Cruz
   captain: edmee_de_yong
