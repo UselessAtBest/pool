@@ -1534,8 +1534,8 @@
   bio: null
   contact: null
   photo: null
-- id: rudolfo_carvajal
-  displayName: Rudolfo Espinosa Carvajal
+- id: rodolfo_carvajal
+  displayName: Rodolfo Espinosa Carvajal
   seasons:
     2026-27: barquito
   bio: null
@@ -1702,3 +1702,33 @@
   bio: null
   contact: null
   photo: null
+- id: graham_cox
+  displayName: Graham Cox
+  seasons:
+    2026-27: wobbly
+  bio: null
+  contact: null
+  photo: null
+- id: thomas_sorensen
+  displayName: Thomas Sorensen
+  seasons:
+    2026-27: captain
+  bio: null
+  contact: null
+  photo: null
+- id: mads_sorensen
+  displayName: Mads Sorensen
+  seasons:
+    2026-27: captain
+  bio: null
+  contact: null
+  photo: null
+- id: sean_darragh
+  displayName: Sean Darragh
+  seasons:
+    2026-27: captain
+  bio: null
+  contact: null
+  photo: null
+
+
