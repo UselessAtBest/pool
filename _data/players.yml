@@ -327,7 +327,7 @@
   bio: <3
   contact: null
   photo: null
-- id: kevin_mulligan
+- id: kev_mulligan
   displayName: Kevin Mulligan
   seasons:
     2026-27: smokeys_m
@@ -1730,5 +1730,45 @@
   bio: null
   contact: null
   photo: null
-
-
+- id: mick_riisersen
+  displayName: Mick Riisersen
+  seasons:
+    2026-27: captain
+  bio: null
+  contact: null
+  photo: null
+- id: dave_cross
+  displayName: Dave_Cross
+  seasons:
+    2026-27: royal_dix
+  bio: null
+  contact: null
+  photo: null
+- id: ramona_svensson
+  displayName: Ramona_Svensson
+  seasons:
+    2026-27: wobbly_dix
+  bio: null
+  contact: null
+  photo: null
+- id: alvaro_jimenez
+  displayName: Álvaro Jimenez
+  seasons:
+    2026-27: royal_dix
+  bio: null
+  contact: null
+  photo: null
+- id: ana_ramos
+  displayName: Ana Ramos
+  seasons:
+    2026-27: royal_dix
+  bio: null
+  contact: null
+  photo: null
+- id: geordie_northend
+  displayName: Geordie Northend
+  seasons:
+    2026-27: royal_oak
+  bio: null
+  contact: null
+  photo: null
