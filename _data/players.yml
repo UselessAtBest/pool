@@ -1562,8 +1562,8 @@
   bio: null
   contact: null
   photo: null
-- id: lynne_msrdle
-  displayName: Lynne Msrdle
+- id: lynne_mardle
+  displayName: Lynne Mardle
   seasons:
     2026-27: pink_ladies
   bio: null
@@ -1745,7 +1745,7 @@
   contact: null
   photo: null
 - id: ramona_svensson
-  displayName: Ramona Svensson
+  displayName: Ramona_Svensson
   seasons:
     2026-27: wobbly_dix
   bio: null
@@ -1769,6 +1769,20 @@
   displayName: Geordie Northend
   seasons:
     2026-27: royal_oak
+  bio: null
+  contact: null
+  photo: null
+- id: brian_mcgill
+  displayName: Brain McGill
+  seasons:
+    2026-27: smokeys_m
+  bio: null
+  contact: null
+  photo: null
+- id: kristian_kaae
+  displayName: Kristian Kaae
+  seasons:
+    2026-27: boulevard
   bio: null
   contact: null
   photo: null
